@@ -1,0 +1,23 @@
+<div class="dropdown">
+    <button class="dropbtn" (click)="toggleDropdown()">
+        <img [src]="dropbox" class="dropbox" >
+    </button>
+    <div class="dropdown-content" [class.show]="isOpen">
+        <ul class="drop-itens">
+            <li class="itens">
+                <img [src]="globo" class="item-image">
+                <a href="#">Agências</a>
+            </li>
+            <li class="itens">
+                <img [src]="favorite" class="item-image">
+                <a href="#">Favoritos</a>
+                
+            </li>
+            <li class="itens">
+                <img [src]="config" class="item-image">
+                <a href="#">Configurações </a>
+            </li>
+        </ul>
+    </div>
+</div>
+

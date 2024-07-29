@@ -1,0 +1,29 @@
+<app-nav-bar [disableLogoImg]="true"></app-nav-bar>
+<div class="container">
+    <div class="profile-sidebar">
+        <img [src]="imgLogin" style="height:20vh; width:10vw;" alt="">
+        <h2>Olá, {{ user.name1 }}</h2>
+    </div>
+    <div class="profile-content">
+        <h2>Editar Perfil</h2>
+        <form (ngSubmit)="onUpdate()" #profileForm="ngForm">
+            <input type="text" name="nome" [(ngModel)]="user.name1" placeholder="Nome" required>
+            <input type="email" name="email" [(ngModel)]="user.email" placeholder="E-mail" required>
+            <input type="password" name="senha" [(ngModel)]="user.password1" placeholder="Senha" required>
+            <input type="password" name="confirmar-senha" [(ngModel)]="user.password2" placeholder="Confirmar Senha" required>
+            <input type="submit" value="Salvar alterações">
+        </form>
+    </div>    
+</div>
+
+
+<div class="container">
+    <div class="favorites">
+        <h3>Programas Favoritos <span style="color: red;">❤️</span></h3>
+        <div class="image-container">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>

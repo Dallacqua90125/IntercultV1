@@ -1,19 +1,17 @@
-<ul class="nav nav-tabs dropbox" >
-    <li class="nav-item dropdown" style="width: 48.2%;">
-      <button class="nav-link dropdown-toggle dropbox" id="btndrop" data-bs-toggle="dropdown" role="button" aria-expanded="false" ><img [src]="dropbox" alt=""class="mundo"></button>
-      <ul class="nav flex-column shadow p-3 mb-5 bg-body-tertiary rounded" style="height:85vh; width: 50%; display: none;" id="drop">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </li> <li style="width: 50%;" class="dropbox"> <img [src]="logo" alt="" class="mundo" ></li> 
-  </ul>
+<ul class="nav nav-tabs dropbox">
+  <li class="nav-item" *ngIf="!disableDropdowns">
+    <app-drop-box></app-drop-box>
+  </li>
+  <li class="nav-item">
+    <a [routerLink]="['/']" *ngIf="!disableLogo"><img [src]="logo" alt="" class="mundo"></a>
+    <img [src]="logo" alt="" class="mundo"  *ngIf="!disableLogoImg">
+    <p>InterCult</p>
+    <a href="#" class="a">Programas &#9660;</a>
+    <a href="#" class="a">Destinos &#9660;</a>
+    <a href="#" class="a">Documentação e Vistos &#9660;</a>
+    <a href="#" class="a">Sobre nós</a>
+  </li>
+  <li class="nav-item" *ngIf="!disableDropdowns">
+    <app-login-dropdown></app-login-dropdown>
+  </li>
+</ul>

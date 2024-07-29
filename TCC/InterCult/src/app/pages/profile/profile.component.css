@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+}
+.profile-sidebar {
+    background-color: #d3d3d3;
+    padding: 2vw;
+    border-radius: 1vw;
+    text-align: center;
+    margin-right: 2vw;
+    width: 20vw;
+}
+.profile-sidebar img {
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+}
+.profile-content {
+    background-color: #d3d3d3;
+    padding: 2vw;
+    border-radius: 1vw;
+    flex: 1;
+}
+.profile-content h2 {
+    margin-top: 0;
+}
+.profile-content form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+.profile-content form input[type="text"], 
+.profile-content form input[type="password"], 
+.profile-content form input[type="email"] {
+    width: 100%;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #ccc;
+    box-sizing: border-box;
+}
+.profile-content form input[type="submit"] {
+    grid-column: span 2;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    border: none;
+    background-color: #001f54;
+    color: white;
+    font-size: 1.6vw;
+}
+.favorites {
+    background-color: #d3d3d3;
+    padding: 2vw;
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+.favorites h3 {
+    margin-top: 0;
+}
+.favorites .image-container {
+    display: flex;
+    justify-content: space-between;
+}
+.favorites .image-container div {
+    width: 30%;
+    height: 20vw;
+    background-color: white;
+    border-radius: 0.5vw;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+}
