@@ -1,0 +1,44 @@
+.mundo{
+    text-align: center;
+    width: auto;
+    height: 100%;
+}
+
+.dropbox{
+    height: 8vh;
+    background-color: #BDCBF0;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    .box {
+    width: 450px;
+    height: 450px;
+    background: #fff;
+   
+    }
+    
+   #buttom{
+    background-color: #7D9CFF; border-radius: 20px; width: 10vw
+   }
+   button[disabled] {
+    background-color: #ccc; 
+    cursor: not-allowed; 
+}
+li {
+  display: inline;
+}
