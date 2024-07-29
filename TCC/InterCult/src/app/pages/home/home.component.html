@@ -1,5 +1,12 @@
-<nav>
-    <div class="btnLogin">
-        <button routerLink="/login" class="btn-primary">LOGIN</button>
-    </div>
-</nav>
+<app-nav-bar></app-nav-bar>
+<div class="container-search">
+   <app-search-bar></app-search-bar>
+  <div class="flags">
+    <img [src]="imgEua" alt="USA Flag"> 
+    <img [src]="imgCanada" alt="Canada Flag" >
+    <img [src]="imgFranca" alt="France Flag">
+    <img [src]="imgUK" alt="UK Flag">
+    <img [src]="imgItalia" alt="Italy Flag">
+  </div>
+</div>
+<app-programs></app-programs>

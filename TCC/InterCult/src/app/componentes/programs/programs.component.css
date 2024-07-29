@@ -1,0 +1,59 @@
+.programs {
+    text-align: center;
+    padding: 2vh 0;
+}
+.program {
+    display: inline-block;
+    width: 25vw;
+    margin: 1vw;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.program img {
+    width: 100%;
+    height: auto;
+}
+.program .details {
+    padding: 2vh 2vw;
+}
+.program .details a {
+    color: #004aad;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+.program .details p {
+    margin: 0.5vh 0;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel a {
+    font-size: 2vw;
+    text-decoration: none;
+    color: #0056b3;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+img {
+    border-radius: 10px;
+    width: 100%;
+    height:100%;
+    max-height:25vh;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+img:active {
+    transform: scale(0.95);
+}
+
+.titulo{
+    align-items: center;
+}

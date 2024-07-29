@@ -13,6 +13,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SignUpFormsComponent } from './componentes/sign-up-forms/sign-up-forms.component';
 import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SearchBarComponent } from './componentes/search-bar/search-bar.component';
+import { ProgramsComponent } from './componentes/programs/programs.component';
 
 
 
@@ -24,7 +26,9 @@ import { HomeComponent } from './pages/home/home.component';
     SignUpComponent,
     SignUpFormsComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    SearchBarComponent,
+    ProgramsComponent
     
   ],
   imports: [
