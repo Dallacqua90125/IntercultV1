@@ -1,11 +1,11 @@
 <div class="dropdown">
-    <button class="dropbtn" (click)="toggleDropdown()">  
+    <button class="dropbtn" >  
         <img [src]="perfil" class="dropbox">
     </button>
-    <div class="dropdown-content" [class.show]="isOpen" >
+    <div class="dropdown-content" >
         <ul class="drop-itens">
             <li class="itens" routerLink="/profile"><a>Perfil</a></li>
-            <li class="itens"><a routerLink="/login">{{ loginTxt }}</a></li>
+            <li class="itens"><a routerLink="/login"></a></li>
         </ul>
     </div>
 </div>

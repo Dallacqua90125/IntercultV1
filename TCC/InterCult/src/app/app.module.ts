@@ -9,12 +9,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
-import { RouterModule, Routes } from '@angular/router';
 import { SignUpFormsComponent } from './componentes/sign-up-forms/sign-up-forms.component';
 import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SearchBarComponent } from './componentes/search-bar/search-bar.component';
 import { ProgramsComponent } from './componentes/programs/programs.component';
+import { DropBoxComponent } from './componentes/drop-box/drop-box.component';
+import { LoginDropdownComponent } from './componentes/login-dropdown/login-dropdown.component';
+
+
 
 
 
@@ -28,7 +31,9 @@ import { ProgramsComponent } from './componentes/programs/programs.component';
     NavBarComponent,
     HomeComponent,
     SearchBarComponent,
-    ProgramsComponent
+    ProgramsComponent,
+    DropBoxComponent,
+    LoginDropdownComponent
     
   ],
   imports: [

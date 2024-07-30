@@ -28,7 +28,7 @@ export class LoginComponent  {
           alert(`Bem vindo ${item.name}`);
           
           this.router.navigate(['/']);
-          return; 
+          return ; 
         }
       });
 
