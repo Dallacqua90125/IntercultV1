@@ -16,6 +16,7 @@ import { SearchBarComponent } from './componentes/search-bar/search-bar.componen
 import { ProgramsComponent } from './componentes/programs/programs.component';
 import { DropBoxComponent } from './componentes/drop-box/drop-box.component';
 import { LoginDropdownComponent } from './componentes/login-dropdown/login-dropdown.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 
@@ -32,7 +33,8 @@ import { LoginDropdownComponent } from './componentes/login-dropdown/login-dropd
     SearchBarComponent,
     ProgramsComponent,
     DropBoxComponent,
-    LoginDropdownComponent
+    LoginDropdownComponent,
+    ProfileComponent
     
   ],
   imports: [
