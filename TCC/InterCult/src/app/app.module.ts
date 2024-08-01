@@ -16,8 +16,13 @@ import { SearchBarComponent } from './componentes/search-bar/search-bar.componen
 import { ProgramsComponent } from './componentes/programs/programs.component';
 import { DropBoxComponent } from './componentes/drop-box/drop-box.component';
 import { LoginDropdownComponent } from './componentes/login-dropdown/login-dropdown.component';
-
-
+import { ProfileComponent } from './pages/profile/profile.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -32,15 +37,21 @@ import { LoginDropdownComponent } from './componentes/login-dropdown/login-dropd
     SearchBarComponent,
     ProgramsComponent,
     DropBoxComponent,
-    LoginDropdownComponent
-    
+    LoginDropdownComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [
     provideClientHydration()
