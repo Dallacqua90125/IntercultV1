@@ -23,6 +23,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import {MatListModule} from '@angular/material/list';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 
@@ -54,7 +55,8 @@ import {MatListModule} from '@angular/material/list';
     MatListModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
