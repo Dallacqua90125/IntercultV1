@@ -1,57 +1,35 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css'] 
+  styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-  logo: string = 'assets/intercultlogo.png';
-  imgLogin: string = 'assets/fotinho.png';
-  
+  @ViewChild('fileInput') fileInput!: ElementRef;
+  profileImgSrc: string = 'https://via.placeholder.com/150';
+  name: string = '';
+  email: string = '';
 
-  user = {
-    email: '',
-    name: '',
-    name1:'',
-    password1: '',
-    password2: ''
-  };
-  
-  constructor(private router: Router) {
-    this.loadCurrentUser();
+  triggerFileInput(): void {
+    this.fileInput.nativeElement.click();
   }
 
-  loadCurrentUser() {
-    const currentUserName = localStorage.getItem('currentUserName');
-    const usersJson = localStorage.getItem('users');
-    if (currentUserName && usersJson) {
-      const users: any[] = JSON.parse(usersJson);
-      const currentUser = users.find((user: any) => user.name === currentUserName);
-      if (currentUser) {
-        this.user = { ...currentUser }; 
-      }
-    }
-  }
-
-  onUpdate() {
-    if (this.user.password1 !== this.user.password2) {
-        alert('As senhas não coincidem');
-        return;
-    }
-
-    const usersJson = localStorage.getItem('users');
-    if (usersJson) {
-        const users: any[] = JSON.parse(usersJson);
-        const currentUserIndex = users.findIndex((user: any) => user.name === this.user.name);
-        if (currentUserIndex !== -1) {
-            users[currentUserIndex] = this.user;
-            localStorage.setItem('users', JSON.stringify(users));
-            alert('Usuário atualizado');
-            this.user.name = this.user.name1; 
-            this.router.navigate(['/']);
+  onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files[0]) {
+      const reader = new FileReader();
+      reader.onload = (e: ProgressEvent<FileReader>) => {
+        if (e.target?.result) {
+          this.profileImgSrc = e.target.result as string;
         }
+      };
+      reader.readAsDataURL(input.files[0]);
     }
-}
+  }
+
+  saveChanges(): void {
+    // Implement the logic to save changes
+    console.log('Profile updated:', { name: this.name, email: this.email, profileImgSrc: this.profileImgSrc });
+  }
 }

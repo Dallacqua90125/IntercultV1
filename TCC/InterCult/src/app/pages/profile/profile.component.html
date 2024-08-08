@@ -1,23 +1,32 @@
 <app-nav-bar></app-nav-bar>
-<div class="container">
-    <div class="profile-sidebar">
-        <img [src]="imgLogin" style="height:20vh; width:10vw;" alt="">
-        <h2>Olá, {{ user.name1 }}</h2>
+<div class="profile-container">
+    <h1>Perfil do Usuario</h1>
+    <div class="profile-picture" (click)="triggerFileInput()">
+      <img [src]="profileImgSrc" alt="Profile Picture">
+      <input type="file" #fileInput accept="image/*" (change)="onFileSelected($event)" style="display: none;">
     </div>
-    <div class="profile-content">
-        <h2>Editar Perfil</h2>
-        <form (ngSubmit)="onUpdate()" #profileForm="ngForm">
-            <input type="text" name="nome"  placeholder="Nome" required>
-            <input type="email" name="email" placeholder="E-mail" required>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <input type="password" name="confirmar-senha" placeholder="Confirmar Senha" required>
-            <input type="submit" value="Salvar alterações">
-        </form>
-    </div>    
-</div>
+    <form class="profile-form">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name">
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email">
+      </div>
+      <div class="form-click">
+        <div class="form-button"><button type="button" (click)="saveChanges()">Salvar alteracoes</button></div >
+        <div class="form-link"><a href="#">Alterar Senha</a></div>
+    </div>
+    
+    </form>
+  </div>
+  
+  
 
 
-<div class="container">
+<!--<div class="container">
     <div class="favorites">
         <h3>Programas Favoritos <span style="color: red;">❤️</span></h3>
         <div class="image-container">
@@ -26,4 +35,4 @@
             <div></div>
         </div>
     </div>
-</div>
+</div>-->
