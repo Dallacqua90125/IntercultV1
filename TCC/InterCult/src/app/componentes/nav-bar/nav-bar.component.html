@@ -1,17 +1,17 @@
 <ul class="nav nav-tabs dropbox">
-  <li class="nav-item" *ngIf="!disableDropdowns">
+  <li class="nav-item" *ngIf="!disableLogin">
     <app-drop-box></app-drop-box>
   </li>
   <li class="nav-item">
-    <a [routerLink]="['/']" *ngIf="!disableLogo"><img [src]="logo" alt="" class="mundo"></a>
-    <!-- <img [src]="logo" alt="" class="mundo"  *ngIf="!disableLogoImg"> -->
+    <a [routerLink]="['/']" *ngIf="!disableLogin"><img [src]="logo" alt="" class="mundo"></a>
+   <img [src]="logo" alt="" class="mundoLogin"  *ngIf="!disableLogoImg">
     <p>InterCult</p>
-    <a href="#" class="a">Programas &#9660;</a>
-    <a href="#" class="a">Destinos &#9660;</a>
-    <a href="#" class="a">Documentação e Vistos &#9660;</a>
-    <a href="#" class="a">Sobre nós</a>
+    <a href="#" *ngIf="!disableLogin" class="a">Programas &#9660;</a>
+    <a href="#" *ngIf="!disableLogin" class="a">Destinos &#9660;</a>
+    <a href="#" *ngIf="!disableLogin" class="a">Documentação e Vistos &#9660;</a>
+    <a href="#" *ngIf="!disableLogin"class="a">Sobre nós</a>
   </li>
-  <li class="nav-item" *ngIf="!disableDropdowns">
+  <li class="nav-item" *ngIf="!disableLogin">
     <app-login-dropdown></app-login-dropdown>
   </li>
 </ul>
