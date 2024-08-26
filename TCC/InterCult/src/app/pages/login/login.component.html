@@ -1,11 +1,11 @@
-<app-nav-bar></app-nav-bar>
+<!-- <app-nav-bar></app-nav-bar> -->
 <div class="container" id="container">
   <div class="form-container sign-in-container">
     <div class = "form">
       <h1>Login</h1>
 
-      <input type="email" [(ngModel)]="email"  placeholder="Digite seu email" required>
-      <input [(ngModel)]="password" type="password" placeholder="Senha" required>
+      <!-- <input type="email" [(ngModel)]="email"  placeholder="Digite seu email" required>
+      <input [(ngModel)]="password" type="password" placeholder="Senha" required> -->
       
       <button type="button" (click)="doLogin()" [disabled]="!password || !email" >ENTRAR</button>
       <div id="google-btn" style="  margin-top: 6%; margin-bottom: 4%;">
