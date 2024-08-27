@@ -64,9 +64,9 @@ margin: 0 auto;
 padding: 20px;
 }
 .container-search{
-background-color: rgb(195, 195, 195);
+background-color: #e7e7e7;
 height: 36vh;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
 margin-bottom: 2vh;
 margin-top: 0;
 padding-top: 8vh;

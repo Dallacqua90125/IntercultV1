@@ -2,6 +2,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from '../../models/Users';
 import { LoginService } from '../../pages/login/login.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-sign-up-forms',
@@ -30,7 +32,7 @@ export class SignUpFormsComponent implements OnInit {
     });
   }
 
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService, private router: Router,) { }
 
   submit() {
     let userFound = false;
@@ -65,9 +67,11 @@ export class SignUpFormsComponent implements OnInit {
               password: password1,
               photo: this.userForm.get('photo')?.value
             };
-      
+            
+            this.router.navigate(['/login']);
             console.log(userToSend);
             this.onSubmit.emit(userToSend);
+            
           } else {
             alert('Por favor, preencha todos os campos corretamente.');
           }

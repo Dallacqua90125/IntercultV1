@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   height: 8vh; 
+
 }
 
 .mundo {
@@ -58,7 +59,7 @@
   justify-content: flex-end;
 }
 .nav-item p{
-  font-size: 20pt;
+  font-size: 30pt;
   color: white;
   margin-top: 1.5vh;
 }
