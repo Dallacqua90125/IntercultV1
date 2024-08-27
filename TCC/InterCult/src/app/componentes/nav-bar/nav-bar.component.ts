@@ -8,7 +8,6 @@ import { Component, Input, input } from '@angular/core';
 export class NavBarComponent {
   dropbox: string =  'assets/listras.png';
   logo: string =  'assets/pula.png';
-  @Input() disableDropdowns: boolean = false;
   @Input() disableLogo: boolean = false;
-  @Input() disableLogoImg: boolean = false;
+  @Input() disableLogoImg: boolean = true;
 }

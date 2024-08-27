@@ -31,6 +31,9 @@ export class LoginComponent  {
 
          
           this.userService.setUser(item);
+
+          let user = item.name
+          let email = item.email
           
           this.router.navigate(['/']);
           return;

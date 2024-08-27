@@ -1,6 +1,8 @@
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<app-nav-bar></app-nav-bar>
+<app-nav-bar
+[disableLogo]="true"
+[disableLogoImg]="false"></app-nav-bar>
   <form [formGroup]="userForm" (ngSubmit)="submit()" formDit="'ngForm">
 
     <div class="container" id="container">

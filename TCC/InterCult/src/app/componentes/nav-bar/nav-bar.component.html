@@ -1,17 +1,17 @@
 <ul class="nav nav-tabs dropbox">
-  <li class="nav-item" *ngIf="!disableDropdowns">
+  <li class="nav-item" *ngIf="!disableLogo">
     <app-drop-box></app-drop-box>
   </li>
   <li class="nav-item">
     <a [routerLink]="['/']" *ngIf="!disableLogo"><img [src]="logo" alt="" class="mundo"></a>
-    <!-- <img [src]="logo" alt="" class="mundo"  *ngIf="!disableLogoImg"> -->
+    <img [src]="logo" alt="" class="mundo"  *ngIf="!disableLogoImg">
     <p>InterCult</p>
-    <a href="#" class="a">Programas &#9660;</a>
-    <a href="#" class="a">Destinos &#9660;</a>
-    <a href="#" class="a">Documentação e Vistos &#9660;</a>
-    <a href="#" class="a">Sobre nós</a>
+    <a href="#" class="a" *ngIf="!disableLogo">Programas &#9660;</a>
+    <a href="#" class="a" *ngIf="!disableLogo">Destinos &#9660;</a>
+    <a href="#" class="a" *ngIf="!disableLogo">Documentação e Vistos &#9660;</a>
+    <a href="#" class="a" *ngIf="!disableLogo">Sobre nós</a>
   </li>
-  <li class="nav-item" *ngIf="!disableDropdowns">
+  <li class="nav-item" *ngIf="!disableLogo">
     <app-login-dropdown></app-login-dropdown>
   </li>
 </ul>

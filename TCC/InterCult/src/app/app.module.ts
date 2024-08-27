@@ -24,6 +24,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import {MatListModule} from '@angular/material/list';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ItalyComponent } from './pages/italy/italy.component';
+import { FranceComponent } from './pages/france/france.component';
+import { EuaComponent } from './pages/eua/eua.component';
 
 
 
@@ -39,7 +42,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     ProgramsComponent,
     DropBoxComponent,
     LoginDropdownComponent,
-    ProfileComponent
+    ProfileComponent,
+    ItalyComponent,
+    FranceComponent,
+    EuaComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +58,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [
     provideClientHydration(),

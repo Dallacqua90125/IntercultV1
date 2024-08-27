@@ -4,8 +4,12 @@
     </button>
     <div class="dropdown-content" [class.show]="isOpen">
         <ul class="drop-itens">
-            <li class="itens" ><a routerLink="/profile">Perfil</a></li>
-            <li class="itens"><a routerLink="/login">Finalizar Sessao</a></li>
+            <li class="itens" *ngIf="userName"><a routerLink="/profile">{{ userName }}</a></li>
+            <li class="itens">
+                <a routerLink="/login">
+                    {{ userName ? 'Finalizar Sessao' : 'Entrar na conta' }}
+                </a>
+            </li>
         </ul>
     </div>
 </div>

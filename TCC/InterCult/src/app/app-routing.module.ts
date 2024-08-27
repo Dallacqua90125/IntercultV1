@@ -4,12 +4,18 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { FranceComponent } from './pages/france/france.component';
+import { EuaComponent } from './pages/eua/eua.component';
+import { ItalyComponent } from './pages/italy/italy.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
   { path: 'login', component: LoginComponent },
   { path: '', component: HomeComponent },
-  { path: 'profile', component: ProfileComponent}
+  { path: 'profile', component: ProfileComponent},
+  { path: 'franca', component: FranceComponent },
+  { path: 'america', component: EuaComponent},
+  { path: 'italia', component: ItalyComponent}
 ];
 
 @NgModule({
