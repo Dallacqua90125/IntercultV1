@@ -1,0 +1,21 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <h2>Agências</h2>
+  
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar agência" [(ngModel)]="searchText">
+    </div>
+  
+    <div class="agencia-card" *ngFor="let agencia of agencias">
+      <div class="agencia-image"></div>
+      <div class="agencia-info">
+        <p class="agencia-name">{{ agencia.nome }}</p>
+        <p class="agencia-paises">
+          Países: <span>{{ agencia.paises }}</span>
+        </p>
+        <p class="agencia-rating">{{ agencia.rating }} ({{ agencia.avaliacoes }})</p>
+      </div>
+    </div>
+  </div>
+
+  op

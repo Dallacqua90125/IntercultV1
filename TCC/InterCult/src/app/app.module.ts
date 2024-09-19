@@ -27,6 +27,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { ItalyComponent } from './pages/italy/italy.component';
 import { FranceComponent } from './pages/france/france.component';
 import { EuaComponent } from './pages/eua/eua.component';
+import { AgenciasComponent } from './pages/agencias/agencias.component';
 
 
 
@@ -45,7 +46,8 @@ import { EuaComponent } from './pages/eua/eua.component';
     ProfileComponent,
     ItalyComponent,
     FranceComponent,
-    EuaComponent
+    EuaComponent,
+    AgenciasComponent
   ],
   imports: [
     BrowserModule,

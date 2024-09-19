@@ -7,6 +7,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { FranceComponent } from './pages/france/france.component';
 import { EuaComponent } from './pages/eua/eua.component';
 import { ItalyComponent } from './pages/italy/italy.component';
+import { AgenciasComponent } from './pages/agencias/agencias.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent},
   { path: 'franca', component: FranceComponent },
   { path: 'america', component: EuaComponent},
-  { path: 'italia', component: ItalyComponent}
+  { path: 'italia', component: ItalyComponent},
+  { path: 'agencias', component: AgenciasComponent}
 ];
 
 @NgModule({
