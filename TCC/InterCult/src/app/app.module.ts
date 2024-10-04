@@ -28,6 +28,8 @@ import { ItalyComponent } from './pages/italy/italy.component';
 import { FranceComponent } from './pages/france/france.component';
 import { EuaComponent } from './pages/eua/eua.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
+
 
 
 
@@ -47,7 +49,8 @@ import { AgenciasComponent } from './pages/agencias/agencias.component';
     ItalyComponent,
     FranceComponent,
     EuaComponent,
-    AgenciasComponent
+    AgenciasComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,

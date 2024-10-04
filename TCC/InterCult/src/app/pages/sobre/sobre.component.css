@@ -1,0 +1,66 @@
+/* Estilização geral */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .line {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Estilização da seção de redes sociais */
+  .social-media {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .social-media p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .icon img {
+    width: 50px;
+    margin-top: 10px;
+  }
+  

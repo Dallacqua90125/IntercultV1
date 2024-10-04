@@ -9,7 +9,7 @@
     <a href="#" class="a" *ngIf="!disableLogo">Programas &#9660;</a>
     <a href="#" class="a" *ngIf="!disableLogo">Destinos &#9660;</a>
     <a href="#" class="a" *ngIf="!disableLogo">Documentação e Vistos &#9660;</a>
-    <a href="#" class="a" *ngIf="!disableLogo">Sobre nós</a>
+    <a [routerLink]="['/sobre']" class="a" *ngIf="!disableLogo">Sobre nós</a>
   </li>
   <li class="nav-item" *ngIf="!disableLogo">
     <app-login-dropdown></app-login-dropdown>
