@@ -29,6 +29,7 @@ import { FranceComponent } from './pages/france/france.component';
 import { EuaComponent } from './pages/eua/eua.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
+import { ResultsComponent } from './pages/results/results.component';
 
 
 
@@ -50,7 +51,8 @@ import { SobreComponent } from './pages/sobre/sobre.component';
     FranceComponent,
     EuaComponent,
     AgenciasComponent,
-    SobreComponent
+    SobreComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,

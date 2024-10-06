@@ -7,9 +7,9 @@
         </select>
     </div>
     <div class="dropdown-container">
-        <label for="price">Preço</label>
-        <select id="price">
-            <option value="any">Qualquer preço</option>
+        <label for="duration">Duração</label>
+        <select id="duration">
+            <option value="any">Tempo </option>
         </select>
     </div>
     <div class="dropdown-container">
@@ -18,6 +18,6 @@
             <option value="all">Todos</option>
         </select>
     </div>
-    <button class="search-button">Pesquisar</button>
+    <button class="search-button" [routerLink]="['/results']">Pesquisar</button>
 </div>
 
