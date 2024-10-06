@@ -14,9 +14,27 @@
                 
             </li>
             <li class="itens">
+                <img [src]="document" class="item-image">
+                <a href="#">Documentação </a>
+            </li>
+            <li class="itens">
+                <img [src]="books" class="item-image">
+                <a href="#">Programas </a>
+            </li>
+            <li class="itens">
+                <img [src]="gps" class="item-image">
+                <a href="#">Destinos </a>
+            </li>
+            
+            <li class="itens" >
+                <img [src]="person" class="item-image">
+                <a [routerLink]="['/sobre']">Sobre nós </a>
+            </li>
+            <li class="itens">
                 <img [src]="config" class="item-image">
                 <a href="#">Configurações </a>
             </li>
+            
         </ul>
     </div>
 </div>

@@ -41,6 +41,10 @@ export class DropBoxComponent {
   favorite: string = 'assets/favorite.png';
   config: string = 'assets/config.png';
   globo: string = 'assets/globo.png';
+  document: string = 'assets/document.png';
+  gps: string = 'assets/gps.png';
+  books: string = 'assets/books.png';
+  person: string = 'assets/person.png';
 
   toggleDropdown() {
     this.isOpen = !this.isOpen;
