@@ -10,6 +10,7 @@ import { ItalyComponent } from './pages/italy/italy.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ResultsComponent } from './pages/results/results.component';
+import { ContentComponent } from './pages/content/content.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'italia', component: ItalyComponent},
   { path: 'agencias', component: AgenciasComponent},
   { path: 'sobre', component: SobreComponent},
-  { path: 'results', component: ResultsComponent}
+  { path: 'results', component: ResultsComponent},
+  { path: 'content/:id', component: ContentComponent },
 ];
 
 @NgModule({

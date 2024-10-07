@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { withFetch } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +31,7 @@ import { EuaComponent } from './pages/eua/eua.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ResultsComponent } from './pages/results/results.component';
+import { ContentComponent } from './pages/content/content.component';
 
 
 
@@ -52,7 +54,8 @@ import { ResultsComponent } from './pages/results/results.component';
     EuaComponent,
     AgenciasComponent,
     SobreComponent,
-    ResultsComponent
+    ResultsComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import { ResultsComponent } from './pages/results/results.component';
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient(withFetch()) 
   ],
   bootstrap: [AppComponent]
 })

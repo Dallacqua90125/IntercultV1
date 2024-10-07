@@ -1,15 +1,24 @@
-import { Component } from '@angular/core';
+// programs.component.ts
+import { Component, OnInit } from '@angular/core';
+import { ContentService } from '../../services/content/content.service';
+import { Content } from '../../models/Content';
 
 @Component({
   selector: 'app-programs',
   templateUrl: './programs.component.html',
-  styleUrl: './programs.component.css'
+  styleUrl: './programs.component.css' 
 })
-export class ProgramsComponent {
-  imgcidade1: string =  'assets/vancouver4.jpg';
-  imgcidade2: string =  'assets/roma.jpg';
-  imgcidade3: string =  'assets/paris.jpg';
-  imgcidade4: string =  'assets/uk.jpg';
-  imgcidade5: string =  'assets/orlando.jpg';
-  imgpaisagem: string =  'assets/image.png';
+export class ProgramsComponent implements OnInit {
+
+  Contents: Content[] = []; 
+
+  constructor(private contentService: ContentService) {}
+
+  ngOnInit(): void {
+    
+    this.contentService.GetContent().subscribe(data => {
+      const dados = data.data; 
+      this.Contents = dados; 
+    });
+  }
 }
