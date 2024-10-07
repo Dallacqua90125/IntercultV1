@@ -3,60 +3,82 @@
     <app-search-bar></app-search-bar>  
  </div>
  
-<div class="container">
-    <!-- Filtros -->
-    <div class="filtros">
-      <h3>Filtros</h3>
-      
-      <div class="filtro-tipo">
-        <label for="tipo">Tipo</label><br>
-        <label><input type="checkbox"> Curso de Idioma</label><br>
-        <label><input type="checkbox"> Teen</label><br>
-        <label><input type="checkbox"> High School</label><br>
-        <label><input type="checkbox"> Trabalhar e Estudar Idioma</label><br>
-      </div>
-      
-      <div class="filtro-duracao">
-        <label for="duracao">Duração</label><br>
-        <label for="min">Tempo minimo</label>
-        <input type="text" placeholder="Qualquer opção"><br>
-        <label for="max">Tempo maximo</label>
-        <input type="text" placeholder="1 Ano ou mais">
-      </div>
-      
-      <div class="filtro-pais">
-        <label for="pais">País</label><br>
-        <label><input type="checkbox"> Canadá</label><br>
-        <label><input type="checkbox"> Espanha</label><br>
-        <label><input type="checkbox"> Estados Unidos</label><br>
-        <label><input type="checkbox"> Inglaterra</label><br>
-        <label><input type="checkbox"> Nova Zelândia</label>
-      </div>
-      
-      <div class="filtro-acomodacao">
-        <label for="acomodacao">O que está incluso</label><br>
-        <label><input type="checkbox"> Acomodações</label><br>
-        <label><input type="checkbox"> Casa de família</label><br>
-        <label><input type="checkbox"> Residência Estudantil</label>
-      </div>
-      
-      <div class="filtro-avaliacao">
-        <label for="avaliacao">Avaliações </label>
-        <input type="range" min="1" max="5" value="4">
-      </div>
-    </div>
-  
-    <!-- Resultados -->
-    <div class="resultados">
-      <h3>Resultados</h3>
-      <div class="curso" *ngFor="let curso of cursos">
-        <div class="curso-img"></div>
-        <div class="curso-info">
-          <h4>{{ curso.titulo }}</h4>
-          <p>{{ curso.pais }}, {{ curso.cidade }}</p>
-          <p>R$ {{ curso.preco }}</p>
-          <p>Nota: {{ curso.avaliacao }}</p>
+ <div class="container">
+  <div class="filtro-container">
+    <h2>Filtros</h2>
+    <form>
+      <div class="filtro-secao">
+        <label class="filtro-titulo">Tipo</label>
+        <div *ngFor="let tipo of tipos">
+          <label>
+            <input type="checkbox">
+            <span class="checkbox-custom"></span>
+            {{ tipo }}
+          </label>
         </div>
+      </div>
+
+      <div class="filtro-secao">
+        <label class="filtro-titulo">Duração</label>
+        <input type="text" placeholder="Tempo mínimo">
+        <input type="text" placeholder="Tempo máximo">
+      </div>
+
+      <div class="filtro-secao">
+        <label class="filtro-titulo">País</label>
+        <div *ngFor="let pais of paises">
+          <label>
+            <input type="checkbox">
+            <span class="checkbox-custom"></span>
+            {{ pais }}
+          </label>
+        </div>
+      </div>
+
+      <div class="filtro-secao">
+        <label class="filtro-titulo">O que está incluso</label>
+        <div *ngFor="let opcao of opcoes">
+          <label>
+            <input type="checkbox">
+            <span class="checkbox-custom"></span>
+            {{ opcao }}
+          </label>
+        </div>
+      </div>
+
+      <div class="ordenar-por">
+        <label for="ordenar-select">Ordenar por:</label>
+        <select id="ordenar-select">
+          <option value="preco">Preço</option>
+          <option value="avaliacao">Avaliação</option>
+          <option value="duracao">Duração</option>
+        </select>
+      </div>
+      
+      <button type="submit">Aplicar Filtros</button>
+    </form>
+  </div>
+
+  <div class="resultados-container">
+    <h2>Resultados</h2>
+    <div class="resultado" *ngFor="let resultado of resultado">
+      <div class="imagem"></div>
+      <div class="info">
+        <h3>{{ resultado.nome }} - {{resultado.agencia}}</h3>
+        <p>{{ resultado.cidade }} - {{ resultado.pais }} </p>
+        <p>{{ resultado.preco | currency:'BRL' }}</p>
+        <p>Nota: {{ resultado.avaliacao }}</p>
       </div>
     </div>
   </div>
+</div>
+
+
+
+
+  <!-- <div class="curso-info">
+    <h4>{{ curso.titulo }}</h4>
+    <p>{{ curso.pais }}, {{ curso.cidade }}</p>
+    <p>R$ {{ curso.preco }}</p>
+    <p>Nota: {{ curso.avaliacao }}</p>
+  </div> -->
