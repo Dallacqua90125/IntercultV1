@@ -1,41 +1,26 @@
 import { Component, HostListener } from '@angular/core';
-import { trigger, transition, query, style, animate, group } from '@angular/animations';
-const left = [
-  query(':enter, :leave', style({ position: 'fixed', width: '20vw' }), { optional: true }),
-  group([
-    query(':enter', [style({ transform: 'translateX(-100%)' }), animate('.3s ease-out', style({ transform: 'translateX(0%)' }))], {
-      optional: true,
-    }),
-    query(':leave', [style({ transform: 'translateX(0%)' }), animate('.3s ease-out', style({ transform: 'translateX(100%)' }))], {
-      optional: true,
-    }),
-  ]),
-];
+import { trigger, state, style, animate, transition } from '@angular/animations';
+import { Router } from '@angular/router';
 
-const right = [
-  query(':enter, :leave', style({ position: 'fixed', width: '20vw' }), { optional: true }),
-  group([
-    query(':enter', [style({ transform: 'translateX(100%)' }), animate('.3s ease-out', style({ transform: 'translateX(0%)' }))], {
-      optional: true,
-    }),
-    query(':leave', [style({ transform: 'translateX(0%)' }), animate('.3s ease-out', style({ transform: 'translateX(-100%)' }))], {
-      optional: true,
-    }),
-  ]),
-];
 @Component({
   selector: 'app-drop-box',
   templateUrl: './drop-box.component.html',
-  styleUrl: './drop-box.component.css',
+  styleUrls: ['./drop-box.component.css'],
   animations: [
-    trigger('animSlider', [
-      transition(':increment', right),
-      transition(':decrement', left),
-    ]),
-  ],
+    trigger('slideInOut', [
+      state('in', style({
+        transform: 'translateX(0)' // Menu visível
+      })),
+      state('out', style({
+        transform: 'translateX(-100%)' // Menu oculto
+      })),
+      transition('in => out', animate('300ms ease-in-out')),
+      transition('out => in', animate('300ms ease-in-out'))
+    ])
+  ]
 })
 export class DropBoxComponent {
-  dropbox: string =  'assets/listras.png';
+  dropbox: string = 'assets/listras.png';
   isOpen = false;
   imgLogin: string = 'assets/icone.png';
   favorite: string = 'assets/favorite.png';
@@ -46,8 +31,18 @@ export class DropBoxComponent {
   books: string = 'assets/books.png';
   person: string = 'assets/person.png';
 
+  constructor(private router: Router) {}
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+  }
+  
   toggleDropdown() {
     this.isOpen = !this.isOpen;
+  }
+
+  get stateName() {
+    return this.isOpen ? 'in' : 'out';
   }
 
   @HostListener('document:click', ['$event'])

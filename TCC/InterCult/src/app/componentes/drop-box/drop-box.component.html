@@ -1,41 +1,37 @@
 <div class="dropdown">
     <button class="dropbtn" (click)="toggleDropdown()">
-        <img [src]="dropbox" class="dropbox" >
+        <img [src]="dropbox" class="dropbox">
     </button>
-    <div class="dropdown-content" [class.show]="isOpen">
+    <div class="dropdown-content" [@slideInOut]="stateName">
         <ul class="drop-itens">
-            <li class="itens">
+            <li class="itens" (click)="navigateTo('/agencias')">
                 <img [src]="globo" class="item-image">
-                <a [routerLink]="['/agencias']">Agências</a>
+                <a [routerLink]="['/agencias']" style="margin-left: 1vh;">Agências</a>
             </li>
-            <li class="itens">
+            <li class="itens" (click)="navigateTo('/favoritos')">
                 <img [src]="favorite" class="item-image">
-                <a href="#">Favoritos</a>
-                
+                <a [routerLink]="['/favoritos']" style="margin-left: 1vh;">Favoritos</a>
             </li>
-            <li class="itens">
+            <li class="itens" (click)="navigateTo('/documentacao')">
                 <img [src]="document" class="item-image">
-                <a href="#">Documentação </a>
+                <a [routerLink]="['/documentacao']" style="margin-left: 1vh;">Documentação</a>
             </li>
-            <li class="itens">
+            <li class="itens" (click)="navigateTo('/programas')">
                 <img [src]="books" class="item-image">
-                <a href="#">Programas </a>
+                <a [routerLink]="['/programas']" style="margin-left: 1vh;">Programas</a>
             </li>
-            <li class="itens">
+            <li class="itens" (click)="navigateTo('/destinos')">
                 <img [src]="gps" class="item-image">
-                <a href="#">Destinos </a>
+                <a [routerLink]="['/destinos']" style="margin-left: 1vh;">Destinos</a>
             </li>
-            
-            <li class="itens" >
+            <li class="itens" (click)="navigateTo('/sobre')">
                 <img [src]="person" class="item-image">
-                <a [routerLink]="['/sobre']">Sobre nós </a>
+                <a [routerLink]="['/sobre']" style="margin-left: 1vh;">Sobre nós</a>
             </li>
-            <li class="itens">
+            <li class="itens" (click)="navigateTo('/configuracoes')">
                 <img [src]="config" class="item-image">
-                <a href="#">Configurações </a>
+                <a [routerLink]="['/configuracoes']" style="margin-left: 1vh;">Configurações</a>
             </li>
-            
         </ul>
     </div>
 </div>
-
