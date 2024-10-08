@@ -4,9 +4,9 @@
 
 <div class="main" *ngFor="let content of Contents">
     <div class="picture">
-        <img [src]="content.photo" alt="{{ content.country }}" /> <!-- Adiciona a imagem -->
+        <img [src]="" alt="{{ content.city }}" /> <!-- Adiciona a imagem -->
     </div>
-    <div class="title">{{ content.country }}</div>
+    <div class="title">{{ content.city }}</div>
     <div class="details"> 
         <div class="info">
             <h2>Sobre o Programa</h2> 
@@ -16,7 +16,7 @@
             <a [href]="content.link" target="_blank" style="color:white; text-decoration:none;">
                 <button class="button3">Saiba mais</button>
             </a>
-            <p><strong>Localização:</strong> {{ content.type }}</p>
+            <p><strong>Localização:</strong> {{ content.country }}</p>
             <p><strong>Duração:</strong> {{ content.time }}</p>
             <p><strong>Agência:</strong> {{ content.agency }}</p>
             <p><strong>Classificação média:</strong> <strong style="color: gold;margin-left: 1vw;">4.5 ★★★★★</strong></p>

@@ -1,16 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
-  styleUrl: './search-bar.component.css'
+  styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
 
-  locais: string[] = ['Todos','EUA', 'Itália', 'França', 'Irlanda', 'Austrália'];
+  @Output() searchEvent = new EventEmitter<any>();
 
-  agencias: string[] = ['Todas','EF', 'CI'];
+  locais: string[] = ['Todos', 'Italia', 'Franca', 'Canada'];
+  agencias: string[] = ['Todas', 'EF Intercâmbio', 'CI'];
+  times: string[] = ['Qualquer duração', '2', '3', '4'];
 
-  precos: string[] = ['Qualquer preço','R$ 1.500 a R$ 5.000','R$ 5.000 a R$ 15.000', 'Mais de R$ 15.000'];
+  selectedLocation: string = 'all';
+  selectedAgency: string = 'all';
+  selectedTime: string = 'all';
 
+  constructor(private router: Router) {}
+
+  onSearch() {
+    // Emitir os filtros selecionados
+    this.searchEvent.emit({
+      location: this.selectedLocation,
+      agency: this.selectedAgency,
+      time: this.selectedTime
+    });
+
+    // Redirecionar para a página de resultados
+    this.router.navigate(['/results'], { queryParams: { location: this.selectedLocation, agency: this.selectedAgency, price: this.selectedTime } });
+  }
 }

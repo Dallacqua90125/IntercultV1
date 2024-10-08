@@ -1,9 +1,9 @@
 <app-nav-bar [disableLogoImg]="true"></app-nav-bar>
 <div class="container-search">
-    <app-search-bar></app-search-bar>  
- </div>
- 
- <div class="container">
+    <app-search-bar (searchEvent)="applyFilters($event)"></app-search-bar>  
+</div>
+
+<div class="container">
   <div class="filtro-container">
     <h2>Filtros</h2>
     <form>
@@ -18,11 +18,11 @@
         </div>
       </div>
 
-      <div class="filtro-secao">
+      <!-- <div class="filtro-secao">
         <label class="filtro-titulo">Duração</label>
         <input type="text" placeholder="Tempo mínimo">
         <input type="text" placeholder="Tempo máximo">
-      </div>
+      </div> -->
 
       <div class="filtro-secao">
         <label class="filtro-titulo">País</label>
@@ -64,21 +64,11 @@
     <div class="resultado" *ngFor="let resultado of resultado">
       <div class="imagem"></div>
       <div class="info">
-        <h3>{{ resultado.nome }} - {{resultado.agencia}}</h3>
-        <p>{{ resultado.cidade }} - {{ resultado.pais }} </p>
-        <p>{{ resultado.preco | currency:'BRL' }}</p>
-        <p>Nota: {{ resultado.avaliacao }}</p>
+        <h3>{{ resultado.country }} - {{resultado.agency}}</h3>
+        <p>{{ resultado.city }} - {{ resultado.time }} semanas </p>
+        <p>3000 BRL</p>
+        <p>Nota: 5</p>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-  <!-- <div class="curso-info">
-    <h4>{{ curso.titulo }}</h4>
-    <p>{{ curso.pais }}, {{ curso.cidade }}</p>
-    <p>R$ {{ curso.preco }}</p>
-    <p>Nota: {{ curso.avaliacao }}</p>
-  </div> -->

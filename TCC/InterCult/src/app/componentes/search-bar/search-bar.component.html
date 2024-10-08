@@ -1,23 +1,21 @@
-
 <div class="form-container">
     <div class="dropdown-container" >
         <label for="location">Local</label>
-        <select id="location" >
-            <option value="all" *ngFor="let local of locais">{{local}}</option>
+        <select id="location" [(ngModel)]="selectedLocation">
+            <option *ngFor="let local of locais" [value]="local">{{local}}</option>
         </select>
     </div>
     <div class="dropdown-container">
         <label for="agence">Agência</label>
-        <select id="agence">
-            <option value="all" *ngFor="let agencia of agencias">{{agencia}}</option>
+        <select id="agence" [(ngModel)]="selectedAgency">
+            <option *ngFor="let agencia of agencias" [value]="agencia">{{agencia}}</option>
         </select>
     </div>
     <div class="dropdown-container">
-        <label for="price">Preço</label>
-        <select id="price">
-            <option value="all" *ngFor="let preco of precos">{{preco}}</option>
+        <label for="price">Duração</label>
+        <select id="price" [(ngModel)]="selectedTime">
+            <option *ngFor="let time of times" [value]="time">{{time}}</option>
         </select>
     </div>
-    <button class="search-button" [routerLink]="['/results']">Pesquisar</button>
+    <button class="search-button" (click)="onSearch()">Pesquisar</button>
 </div>
-

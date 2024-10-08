@@ -7,8 +7,8 @@
         <div class="program" *ngFor="let content of Contents">
             <!-- <img [src]="content.photo" alt="Programa"> Adicione a imagem do conteúdo -->
             <div  class="details" [routerLink]="['/content', content.id]">
-                <a>{{ content.country }} - {{ content.type }}</a>
-                <p>{{ content.agency }}</p>
+                <a>{{ content.city }} - {{ content.type }}</a>
+                <p>{{ content.country }} - {{ content.agency }}</p>
                 <p>★★★★☆ 5</p>
             </div>
         </div>
