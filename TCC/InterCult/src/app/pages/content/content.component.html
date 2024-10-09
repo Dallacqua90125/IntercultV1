@@ -1,45 +1,44 @@
 <app-nav-bar></app-nav-bar>
+<div class="hero-container" *ngFor="let content of Contents">
+    <div class="hero-image">
+      <img src="../assets/roma.jpg" alt="{{ content.city }}" class="city-image">
+      <div class="overlay-text">
+        <h1>{{ content.city }}</h1>
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="text-content">
+        <p class="description">
+        {{ content.description }}
+        </p>
+      </div>
+      
+      <div class="info-box">
+        <div class="info-item">
+          <h3>Localização:</h3>
+          <p>{{ content.country }}</p>
+        </div>
+        <div class="info-item">
+          <h3>Duração:</h3>
+          <p>{{ content.time }} Semana(s)</p>
+        </div>
+        <div class="info-item">
+          <h3>Agência:</h3>
+          <p>{{ content.agency }}</p>
+        </div>
+        <div class="info-item">
+          <h3>Classificação média:</h3>
+          <p>5 ★★★★★</p>
+        </div>
+      </div>
+      
+      <a [href]="content.link" target="_blank" style="color:white; text-decoration:none;">
 
-<div class="body"></div>
-
-<div class="main" *ngFor="let content of Contents">
-    <div class="picture">
-        <img [src]="" alt="{{ content.city }}" /> <!-- Adiciona a imagem -->
+      <div class="action-section">
+        <button class="learn-more">Saiba mais</button>
+      </div>
+    </a>
     </div>
-    <div class="title">{{ content.city }}</div>
-    <div class="details"> 
-        <div class="info">
-            <h2>Sobre o Programa</h2> 
-            <p>{{ content.description }}</p>
-        </div>
-        <div class="sidebar">
-            <a [href]="content.link" target="_blank" style="color:white; text-decoration:none;">
-                <button class="button3">Saiba mais</button>
-            </a>
-            <p><strong>Localização:</strong> {{ content.country }}</p>
-            <p><strong>Duração:</strong> {{ content.time }}</p>
-            <p><strong>Agência:</strong> {{ content.agency }}</p>
-            <p><strong>Classificação média:</strong> <strong style="color: gold;margin-left: 1vw;">4.5 ★★★★★</strong></p>
-        </div>
-    </div>
-    <div class="rating">
-        <div>
-            <strong>Classificação média</strong><br>
-            125 avaliações
-        </div>
-    </div>
-    <div class="reviews">
-        <h2>Avaliações do Programa</h2>
-        <div class="review">
-            <div class="rating">
-                <div>
-                    <strong>Usuário1924</strong><br>
-                    03 de Março de 2024<br>
-                    Título da análise
-                </div>
-                <div class="stars">4/5</div>
-            </div>
-            <p>Análise</p>
-        </div>
-    </div>
-</div>
+  </div>
+  
+  

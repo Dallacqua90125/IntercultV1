@@ -33,6 +33,7 @@ import { SobreComponent } from './pages/sobre/sobre.component';
 import { ResultsComponent } from './pages/results/results.component';
 import { ContentComponent } from './pages/content/content.component';
 import { DocumentationComponent } from './pages/documentation/documentation.component';
+import { CarroselComponent } from './pages/carrosel/carrosel.component';
 
 
 
@@ -57,7 +58,8 @@ import { DocumentationComponent } from './pages/documentation/documentation.comp
     SobreComponent,
     ResultsComponent,
     ContentComponent,
-    DocumentationComponent
+    DocumentationComponent,
+    CarroselComponent
   ],
   imports: [
     BrowserModule,

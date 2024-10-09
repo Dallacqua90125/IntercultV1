@@ -103,7 +103,7 @@ body {
 
   .inline-image {
     display: block; /* Garante que a imagem fique em uma nova linha */
-    max-width: 70%; /* Define a largura máxima da imagem (ajuste conforme necessário) */
+    max-width: 65%; /* Define a largura máxima da imagem (ajuste conforme necessário) */
     height: auto; /* Mantém a proporção da imagem */
     margin: 0 auto; /* Centraliza a imagem */
     border-radius: 5px; /* Bordas arredondadas */
