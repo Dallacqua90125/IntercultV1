@@ -14,7 +14,7 @@ export class ResultsComponent implements OnInit {
 
   // Propriedades adicionais
   tipos: string[] = ['Tipo 1', 'Tipo 2', 'Tipo 3']; // Exemplos de tipos
-  paises: string[] = ['Brasil', 'Argentina', 'Chile']; // Exemplos de países
+  paises: string[] = ['Italia', 'Franca', 'Canada']; // Exemplos de países
   opcoes: string[] = ['Opção 1', 'Opção 2', 'Opção 3']; // Exemplos de opções
 
   constructor(private contentService: ContentService, private router: Router, private route: ActivatedRoute) {}
