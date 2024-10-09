@@ -1,0 +1,16 @@
+<div class="carrosel">
+    <button (click)="previous()" [disabled]="!canGoPrevious()" *ngIf="canGoPrevious()">
+      &lt;
+    </button>
+  
+    <div class="items">
+      <div *ngFor="let item of itemsToShow" class="item">
+        {{ item }}
+      </div>
+    </div>
+  
+    <button (click)="next()" [disabled]="!canGoNext()" *ngIf="canGoNext()">
+      &gt;
+    </button>
+  </div>
+  
