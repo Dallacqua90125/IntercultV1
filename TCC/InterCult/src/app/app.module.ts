@@ -32,6 +32,7 @@ import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ResultsComponent } from './pages/results/results.component';
 import { ContentComponent } from './pages/content/content.component';
+import { DocumentationComponent } from './pages/documentation/documentation.component';
 
 
 
@@ -55,7 +56,8 @@ import { ContentComponent } from './pages/content/content.component';
     AgenciasComponent,
     SobreComponent,
     ResultsComponent,
-    ContentComponent
+    ContentComponent,
+    DocumentationComponent
   ],
   imports: [
     BrowserModule,

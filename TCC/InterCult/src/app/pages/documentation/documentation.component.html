@@ -1,0 +1,65 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <h1 class="titulo">Documentação e Procedimentos para Intercâmbio</h1>
+    <img [src] ="imgpassaporte" alt="Passaporte" class="inline-image" />
+    <p class="cabecalho">
+        Nesta página, reunimos as informações essenciais para quem está planejando um intercâmbio.
+        Aqui, você encontrará orientações resumidas sobre os documentos necessários, como passaporte e visto, além de detalhes sobre os procedimentos exigidos por diferentes países. 
+        Nosso conteúdo é baseado em fontes oficiais e visa oferecer uma visão geral para facilitar sua preparação.
+        <br>
+        Para obter mais detalhes ou atualizações, consulte os links para as fontes originais ao longo do texto. 
+        <br><br>
+        Última atualização: 08/10/2024
+    </p>
+    
+    <!-- Obter Passaporte Section -->
+    <div (click)="toggleSection('passaporte')" class="section-header">
+      <h2>Obter passaporte(Brasil)</h2>
+      <span class="arrow" [ngClass]="{'down': isSectionOpen('passaporte'), 'up': !isSectionOpen('passaporte')}"></span>
+    </div>
+    <div *ngIf="isSectionOpen('passaporte')" class="section-content">
+      <p><strong>O que é?</strong></p>
+      
+      <p>Passaporte é um documento de viagem, ou seja, é um documento aceito como identificação do viajante em outro país. Nele podem ser registrados vistos, autorizações, entradas e saídas. </p>
+      <p><strong>Etapas:</strong></p>
+      <ol>
+        <li>Preencher <a href="https://www.gov.br/pf/pt-br/assuntos/passaporte/iniciar">formulário</a></li>
+        <li>Pagar taxa</li>
+        <li>Agendar atendimento <br>
+            Ao agendar o atendimento, deve-se escolher o posto considerando que a entrega do passaporte ocorrerá na mesma unidade e dentro de um prazo máximo de 90 (noventa) dias corridos. Depois desse prazo, o passaporte não retirado será cancelado, com total prejuízo da taxa paga.</li>
+        <li>Comparecer à unidade escolhida <br>
+            No dia do atendimento presencial, o solicitante deverá apresentar a documentação necessária em via original. 
+
+            O atendente fará a conferência da documentação e das informações cadastradas, coletará dados biométricos — impressões digitais e fotografia facial — e informará o prazo de entrega, em geral, entre 6 e 10 dias úteis.</li>
+        <li>Consultar andamento
+
+            Após o atendimento presencial, é possível consultar o andamento da solicitação. A entrega será possível somente quando o resultado da consulta informar que o passaporte — Documento de viagem — está disponível para entrega. A entrega do passaporte ocorrerá na mesma unidade e dentro de um prazo máximo de 90 (noventa) dias corridos. Depois desse prazo, o passaporte não retirado será cancelado, com total prejuízo da taxa paga </li>
+        <li>Receber passaporte
+
+            Se a consulta ou e-mail informa que o passaporte está pronto, o titular deve comparecer à mesma unidade em que foi atendido, com documento de identificação pessoal. 
+            
+            A forma de atendimento será informada no dia da solicitação do passaporte. </li>
+      </ol>
+    </div>
+  
+    <!-- Intercâmbio e Agências Section -->
+    <div (click)="toggleSection('intercambio')" class="section-header">
+      <h2>Intercâmbio e agências</h2>
+      <span class="arrow" [ngClass]="{'down': isSectionOpen('intercambio'), 'up': !isSectionOpen('intercambio')}"></span>
+    </div>
+    <div *ngIf="isSectionOpen('intercambio')" class="section-content">
+      <!-- Conteúdo pode ser adicionado aqui -->
+      <p>Informações sobre agências de intercâmbio podem ser adicionadas aqui.</p>
+    </div>
+  
+    <!-- Vistos Section -->
+    <div (click)="toggleSection('vistos')" class="section-header">
+      <h2>Vistos</h2>
+      <span class="arrow" [ngClass]="{'down': isSectionOpen('vistos'), 'up': !isSectionOpen('vistos')}"></span>
+    </div>
+    <div *ngIf="isSectionOpen('vistos')" class="section-content">
+      <!-- Conteúdo pode ser adicionado aqui -->
+      <p>Informações sobre vistos podem ser adicionadas aqui.</p>
+    </div>
+  </div>
+  

@@ -11,6 +11,7 @@ import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ResultsComponent } from './pages/results/results.component';
 import { ContentComponent } from './pages/content/content.component';
+import { DocumentationComponent } from './pages/documentation/documentation.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'agencias', component: AgenciasComponent},
   { path: 'sobre', component: SobreComponent},
   { path: 'results', component: ResultsComponent},
+  { path: 'documentation', component: DocumentationComponent},
   { path: 'content/:id', component: ContentComponent },
 ];
 
