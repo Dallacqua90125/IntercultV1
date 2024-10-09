@@ -11,7 +11,7 @@ export class SearchBarComponent {
   @Output() searchEvent = new EventEmitter<any>();
 
   locais: string[] = ['Todos', 'Italia', 'Franca', 'Canada'];
-  agencias: string[] = ['Todas', 'EF Intercâmbio', 'CI'];
+  agencias: string[] = ['Todas', 'EF', 'CI'];
   times: string[] = ['Qualquer duração', '2', '3', '4'];
 
   selectedLocation: string = 'Todos';

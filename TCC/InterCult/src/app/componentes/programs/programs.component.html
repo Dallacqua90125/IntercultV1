@@ -4,7 +4,7 @@
     </div>
     <div class="carousel">
         <a href="#">&#9664;</a>
-        <div class="program" *ngFor="let content of Contents">
+        <div class="program" *ngFor="let content of Contents | slice:0:3">
             <!-- <img [src]="content.photo" alt="Programa"> Adicione a imagem do conteúdo -->
             <div  class="details" [routerLink]="['/content', content.id]">
                 <a>{{ content.city }} - {{ content.type }}</a>

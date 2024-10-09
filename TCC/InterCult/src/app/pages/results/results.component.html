@@ -61,7 +61,7 @@
 
   <div class="resultados-container">
     <h2>Resultados</h2>
-    <div class="resultado" *ngFor="let resultado of resultado">
+    <div class="resultado" *ngFor="let resultado of resultado" [routerLink]="['/content', resultado.id]">
       <div class="imagem"></div>
       <div class="info">
         <h3>{{ resultado.country }} - {{resultado.agency}}</h3>
