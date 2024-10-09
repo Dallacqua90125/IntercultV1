@@ -59,6 +59,13 @@ body {
   margin-right: 3vw;
 }
 
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 0.5vh; /* Mantém o arredondamento das bordas */
+}
+
 .info h3 {
   font-size: 2.5vh;
   margin-bottom: 1vh;

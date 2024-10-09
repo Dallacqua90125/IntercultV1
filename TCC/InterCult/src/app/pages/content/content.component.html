@@ -1,7 +1,7 @@
 <app-nav-bar></app-nav-bar>
 <div class="hero-container" *ngFor="let content of Contents">
     <div class="hero-image">
-      <img src="../assets/roma.jpg" alt="{{ content.city }}" class="city-image">
+      <img [src]="content.photo1" alt="{{ content.city }}" class="city-image">
       <div class="overlay-text">
         <h1>{{ content.city }}</h1>
       </div>
