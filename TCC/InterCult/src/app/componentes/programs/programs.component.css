@@ -9,6 +9,8 @@
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: left;
+    transition: transform 0.5s ease-in-out;
+    min-width: calc(75% / 3);
 }
 .program img {
     width: 100%;
@@ -36,6 +38,30 @@
     text-decoration: none;
     color: #0056b3;
 }
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #004aad; /* Fundo translúcido */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-arrow.left {
+    left: 10px; /* Posição da seta esquerda */
+  }
+  
+  .carousel-arrow.right {
+    right: 10px; /* Posição da seta direita */
+  }
+  
+  /* Estilos para ocultar a seta quando não pode mais navegar */
+  .carousel-arrow.disabled {
+    display: none; /* Oculta a seta quando não pode navegar */
+  }
 a {
     text-decoration: none;
     color:black;
