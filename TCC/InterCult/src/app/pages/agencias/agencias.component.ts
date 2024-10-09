@@ -7,25 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgenciasComponent implements OnInit {
   searchText: string = '';
-
+  imgEF: string =  'assets/ef.png';
+  imgCI: string =  'assets/ci.png';
   agencias = [
     {
-      nome: 'Agência 1',
+      nome: 'EF',
       paises: '🇯🇵 🇰🇷 🇺🇦 🇺🇸 🇫🇷 🇮🇹 🇪🇸 🇬🇧',
       rating: '★★★★☆',
-      avaliacoes: '4.5'
+      avaliacoes: '4.5',
+      img: 'assets/ef-logo.png'
     },
     {
-      nome: 'Agência 2',
+      nome: 'CI',
       paises: '🇿🇦 🇺🇸 🇬🇧 🇦🇴',
       rating: '★★★★☆',
-      avaliacoes: '4.5'
-    },
-    {
-      nome: 'Agência 3',
-      paises: '🇧🇷 🇨🇦 🇦🇷 🇫🇷 🇩🇪',
-      rating: '★★★★☆',
-      avaliacoes: '4.5'
+      avaliacoes: '4.5',
+      img: 'assets/ci - logo.png'
     }
   ];
 

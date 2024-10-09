@@ -14,9 +14,9 @@ export class SearchBarComponent {
   agencias: string[] = ['Todas', 'EF Intercâmbio', 'CI'];
   times: string[] = ['Qualquer duração', '2', '3', '4'];
 
-  selectedLocation: string = 'all';
-  selectedAgency: string = 'all';
-  selectedTime: string = 'all';
+  selectedLocation: string = 'Todos';
+  selectedAgency: string = 'Todas';
+  selectedTime: string = 'Qualquer duração';
 
   constructor(private router: Router) {}
 
