@@ -19,4 +19,11 @@ export class UserService {
   getUser(): any {
     return this.userSubject.value;
   }
+
+  // Novo método para atualizar o usuário
+  updateUser(updatedUser: any): void {
+    // Aqui você poderia fazer uma chamada HTTP para atualizar o usuário no banco de dados
+    console.log('Usuário atualizado:', updatedUser);
+    this.setUser(updatedUser);  // Atualiza o usuário localmente
+  }
 }
