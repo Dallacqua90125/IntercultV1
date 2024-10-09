@@ -10,7 +10,7 @@ export class AgenciasComponent implements OnInit {
   agencias = [
     {
       nome: 'EF',
-      paises: '🇯🇵 🇰🇷 🇺🇦 🇺🇸 🇫🇷 🇮🇹 🇪🇸 🇬🇧',
+      paises: 'A Education First é uma empresa de intercâmbio que oferece programas de aprendizado de idiomas e experiências culturais em diversos países.',
       rating: '★★★★☆',
       avaliacoes: '4.5',
       img: 'assets/ef-logo.png',
@@ -18,7 +18,7 @@ export class AgenciasComponent implements OnInit {
     },
     {
       nome: 'CI',
-      paises: '🇿🇦 🇺🇸 🇬🇧 🇦🇴',
+      paises: 'A Central de Intercâmbio é uma empresa brasileira que oferece programas de intercâmbio, cursos de idiomas e experiências culturais em diversos países.',
       rating: '★★★★☆',
       avaliacoes: '4.5',
       img: 'assets/ci - logo.png',

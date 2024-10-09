@@ -24,18 +24,18 @@ export class ProgramsComponent implements OnInit {
   }
 
   updateVisibleContents() {
-    // Atualiza a lista de itens visíveis limitando a 3
-    
     this.visibleContents = this.Contents.slice(this.currentIndex, this.currentIndex + this.visibleCount);
-    console.log(this.visibleContents)
   }
   
   moveCarousel(direction: string) {
-    if (direction === 'next' && this.currentIndex + this.visibleCount < this.Contents.length) {
-      this.currentIndex += this.visibleCount; // Avança
+    const maxIndex = this.Contents.length - this.visibleCount; // Índice máximo sem ultrapassar a quantidade de itens
+  
+    if (direction === 'next' && this.currentIndex < maxIndex) {
+      this.currentIndex += this.visibleCount; // Avança três itens
     } else if (direction === 'prev' && this.currentIndex > 0) {
-      this.currentIndex -= this.visibleCount; // Volta
+      this.currentIndex -= this.visibleCount; // Volta três itens
     }
+  
     this.updateVisibleContents(); // Atualiza a lista de itens visíveis
   }
 }

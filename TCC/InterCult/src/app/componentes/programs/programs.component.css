@@ -1,17 +1,26 @@
 .programs {
     text-align: center;
     padding: 2vh 0;
+    overflow: hidden; /* Oculta os itens que saem dos limites do container */
+    justify-content: center;
 }
 .program {
-    display: inline-block;
-    width: 25vw;
-    margin: 1vw;
+    flex: 0 0 27%; /* Cada item ocupa um terço da largura do contêiner */
+    margin: 0 1vw;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: left;
-    transition: transform 0.5s ease-in-out;
-    min-width: calc(75% / 3);
+    transition: transform 0.8s ease-in-out;
 }
+
+.program-container {
+    display: flex;
+    transition: transform 0.8s ease-in-out; /* Animação suave ao mover os itens */
+    width: 100%;
+    overflow: hidden; /* Garante que o conteúdo extra não será exibido */
+    justify-content: center;
+}
+
 .program img {
     width: 100%;
     height: auto;
@@ -28,11 +37,19 @@
 .program .details p {
     margin: 0.5vh 0;
 }
+
 .carousel {
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Garante que o carrossel centralize seus itens */
     align-items: center;
+    width: 100%;
 }
+
+.carousel .program {
+    transition: transform 0.5s ease-in-out;
+}
+
 .carousel a {
     font-size: 2vw;
     text-decoration: none;
@@ -48,40 +65,45 @@
     padding: 10px;
     cursor: pointer;
     z-index: 1;
-  }
+}
   
-  .carousel-arrow.left {
+.carousel-arrow.left {
     left: 10px; /* Posição da seta esquerda */
-  }
+}
   
-  .carousel-arrow.right {
+.carousel-arrow.right {
     right: 10px; /* Posição da seta direita */
-  }
+}
   
   /* Estilos para ocultar a seta quando não pode mais navegar */
   .carousel-arrow.disabled {
     display: none; /* Oculta a seta quando não pode navegar */
-  }
+}
+
+.carousel-arrow:hover {
+    background-color: #003a7f; /* Muda a cor das setas ao passar o mouse */
+}
+
 a {
     text-decoration: none;
     color:black;
 }
+
 img {
     border-radius: 10px;
     width: 100%;
     height:100%;
     max-height:25vh;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Amplia um pouco a imagem ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 img:active {
-    transform: scale(0.95);
+    transform: scale(0.95); /* Reduz a imagem ao clicar */
 }
 
 .titulo{
