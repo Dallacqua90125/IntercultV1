@@ -1,112 +1,108 @@
 body {
-    margin: 0;
-    background-color: #f9f9f9; /* Cor de fundo mais suave */
-    color: #333; /* Cor do texto mais escura para melhor contraste */
-  }
-  
-  .container {
-    max-width: 1000px; /* Limitar a largura máxima para telas grandes */
-    width: 90vw; /* 90% da largura da viewport */
-    margin: 5vh auto; /* Margem em relação à altura da viewport */
-    padding: 2vh; /* Espaçamento interno */
-    background-color: #ffffff; /* Fundo branco para o conteúdo */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-  }
-  
-  h1 {
-    text-align: center;
-    color: #0056b3; /* Cor do título principal */
-  }
-  
-  .section-header {
-    background-color: #e7f1ff; /* Cor de fundo leve */
-    padding: 3vh; /* Aumentar padding */
-    margin: 2vh 0; /* Espaçamento vertical entre seções */
-    cursor: pointer;
-    border: 1px solid #0056b3; /* Borda azul */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
-  }
-  
-  .section-header:hover {
-    background-color: #d0e1ff; /* Cor ao passar o mouse */
-    transform: translateY(-2px); /* Levantar efeito ao passar o mouse */
-  }
-  
-  .section-header h2 {
-    padding-bottom: 1.5vh;
-    font-size: 2.5vh;
-    width:90%;
-    float:left; /* Tamanho do texto do cabeçalho */
-  }
-  .seta {
-    margin: 0;
-    width:10%; /* Tamanho do texto do cabeçalho */
-  }
-  
-  .section-content {
-    padding: 2vh;
-    border: 1px solid #ccc; /* Borda do conteúdo */
-    border-top: none; /* Remover borda superior */
-    border-radius: 0 0 5px 5px; /* Bordas arredondadas na parte inferior */
-    background-color: #f1f1f1; /* Fundo do conteúdo */
-    animation: fadeIn 0.5s ease-in-out; /* Efeito de aparecimento */
-    font-size: 2vh; /* Tamanho do texto do conteúdo */
-    line-height: 1.5; /* Melhora a legibilidade */
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  a {
-    color: #0056b3; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado */
-  }
-  
-  a:hover {
-    text-decoration: underline; /* Sublinhado ao passar o mouse */
-  }
-  
-  .cabecalho {
-    font-size: 2.3vh;
-  }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f3f7fa;
+  color: #333;
+}
 
-  .titulo {
-    font-size: 3.2vh;
-    font-weight: bold;
-  }
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 4vh auto;
+  padding: 3vh 4vw;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
 
-  .arrow {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 10px;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-  
-  .down {
-    border-bottom: 10px solid #0056b3; /* Seta para baixo */
-  }
-  
-  .up {
-    border-top: 10px solid #0056b3; /* Seta para cima */
-  }
+h1 {
+  text-align: center;
+  color: #0d6efd;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
 
-  .inline-image {
-    display: block; /* Garante que a imagem fique em uma nova linha */
-    max-width: 65%; /* Define a largura máxima da imagem (ajuste conforme necessário) */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: 0 auto; /* Centraliza a imagem */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
-    margin-bottom: 2vh;
-  }
+.cabecalho {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+.section-header {
+  background-color: #e9f2ff;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  cursor: pointer;
+  border: 1px solid #bdd6f6;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header:hover {
+  background-color: #cfe4ff;
+  transform: translateY(-2px);
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  color: #0d6efd;
+  margin: 0;
+  flex: 1;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+/* A seta apontará para baixo quando a seção estiver fechada */
+.down {
+  border-bottom: 10px solid #0d6efd;
+}
+
+/* A seta apontará para cima quando a seção estiver aberta */
+.up {
+  border-top: 10px solid #0d6efd;
+}
+
+
+.section-content {
+  padding: 2vh 3vw;
+  border: 1px solid #ddd;
+  border-radius: 0 0 8px 8px;
+  background-color: #f9f9f9;
+  animation: fadeIn 0.4s ease-in-out;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.inline-image {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

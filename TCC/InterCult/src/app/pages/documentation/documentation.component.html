@@ -3,106 +3,66 @@
     <h1 class="titulo">Documentação e Procedimentos para Intercâmbio</h1>
     <img [src] ="imgpassaporte" alt="Passaporte" class="inline-image" />
     <p class="cabecalho">
-        Nesta página, reunimos as informações essenciais para quem está planejando um intercâmbio.
-        Aqui, você encontrará orientações resumidas sobre os documentos necessários, como passaporte e visto, além de detalhes sobre os procedimentos exigidos por diferentes países. 
-        Nosso conteúdo é baseado em fontes oficiais e visa oferecer uma visão geral para facilitar sua preparação.
-        <br>
-        Para obter mais detalhes ou atualizações, consulte os links para as fontes originais ao longo do texto. 
+        Nesta página, reunimos todas as informações essenciais para quem está planejando um intercâmbio.
+        Descubra orientações sobre documentos necessários, como passaporte e visto, além de detalhes dos procedimentos exigidos por diferentes países.
         <br><br>
-        Última atualização: 08/10/2024
+        <strong>Última atualização: 08/10/2024</strong>
     </p>
-    
+
     <!-- Obter Passaporte Section -->
     <div (click)="toggleSection('passaporte')" class="section-header">
-      <h2>Obter passaporte(Brasil)</h2>
-      <span class="arrow" [ngClass]="{'down': isSectionOpen('passaporte'), 'up': !isSectionOpen('passaporte')}"></span>
+        <h2>Obter Passaporte (Brasil)</h2>
+        <span class="arrow" [ngClass]="{'down': isSectionOpen('passaporte'), 'up': !isSectionOpen('passaporte')}"></span>
     </div>
     <div *ngIf="isSectionOpen('passaporte')" class="section-content">
-      <p><strong>O que é?</strong></p>
-      
-      <p>Passaporte é um documento de viagem, ou seja, é um documento aceito como identificação do viajante em outro país. Nele podem ser registrados vistos, autorizações, entradas e saídas. </p>
-      <p><strong>Etapas:</strong></p>
-      <ol>
-        <li>Preencher <a href="https://www.gov.br/pf/pt-br/assuntos/passaporte/iniciar">formulário</a></li>
-        <li>Pagar taxa</li>
-        <li>Agendar atendimento <br>
-            Ao agendar o atendimento, deve-se escolher o posto considerando que a entrega do passaporte ocorrerá na mesma unidade e dentro de um prazo máximo de 90 (noventa) dias corridos. Depois desse prazo, o passaporte não retirado será cancelado, com total prejuízo da taxa paga.</li>
-        <li>Comparecer à unidade escolhida <br>
-            No dia do atendimento presencial, o solicitante deverá apresentar a documentação necessária em via original. 
-
-            O atendente fará a conferência da documentação e das informações cadastradas, coletará dados biométricos — impressões digitais e fotografia facial — e informará o prazo de entrega, em geral, entre 6 e 10 dias úteis.</li>
-        <li>Consultar andamento
-
-            Após o atendimento presencial, é possível consultar o andamento da solicitação. A entrega será possível somente quando o resultado da consulta informar que o passaporte — Documento de viagem — está disponível para entrega. A entrega do passaporte ocorrerá na mesma unidade e dentro de um prazo máximo de 90 (noventa) dias corridos. Depois desse prazo, o passaporte não retirado será cancelado, com total prejuízo da taxa paga </li>
-        <li>Receber passaporte
-
-            Se a consulta ou e-mail informa que o passaporte está pronto, o titular deve comparecer à mesma unidade em que foi atendido, com documento de identificação pessoal. 
-            
-            A forma de atendimento será informada no dia da solicitação do passaporte. </li>
-      </ol>
+        <p><strong>O que é?</strong></p>
+        <p>O passaporte é um documento de viagem que identifica o viajante em outros países. Ele registra vistos, autorizações, entradas e saídas.</p>
+        <p><strong>Etapas:</strong></p>
+        <ol>
+            <li>Preencher o <a href="https://www.gov.br/pf/pt-br/assuntos/passaporte/iniciar">formulário online</a> disponível no site da Polícia Federal.</li>
+            <li>Pagar a taxa de emissão do passaporte.</li>
+            <li>Agendar o atendimento presencial em uma unidade da Polícia Federal.</li>
+            <li>Comparecer à unidade com a documentação original para coleta de dados biométricos e foto.</li>
+            <li>Acompanhar o andamento da solicitação no portal.</li>
+            <li>Retirar o passaporte na unidade onde foi solicitado.</li>
+        </ol>
     </div>
-  
+
     <!-- Intercâmbio e Agências Section -->
     <div (click)="toggleSection('intercambio')" class="section-header">
-      <h2>Intercâmbio e agências</h2>
-      <span class="arrow" [ngClass]="{'down': isSectionOpen('intercambio'), 'up': !isSectionOpen('intercambio')}"></span>
+        <h2>Intercâmbio e Agências</h2>
+        <span class="arrow" [ngClass]="{'down': isSectionOpen('intercambio'), 'up': !isSectionOpen('intercambio')}"></span>
     </div>
     <div *ngIf="isSectionOpen('intercambio')" class="section-content">
-      <!-- Conteúdo pode ser adicionado aqui -->
-      <p><strong>O que é um Intercâmbio?</strong> <br><br>
-        O intercâmbio é uma experiência educacional, profissional ou pessoal que permite a uma pessoa viver em um país estrangeiro por um período determinado, geralmente com o objetivo de estudar, trabalhar ou adquirir novas habilidades. Além de aprofundar conhecimentos em um tema específico, o intercâmbio também oferece uma oportunidade de conhecer uma nova cultura e aprimorar o domínio de um idioma estrangeiro. 
-        <br>
-        Qualquer pessoa, de qualquer idade, pode realizar um intercâmbio, seja durante o ensino médio, em programas de estudo ou trabalho. 
-        <br><br>
-        <strong>O que é uma Agência de Intercâmbio? </strong><br><br>
-        Agências de intercâmbio são empresas ou organizações que atuam como intermediárias no processo de envio de estudantes e profissionais para programas de intercâmbio no exterior. Elas auxiliam na escolha do programa ideal, oferecem suporte com a documentação necessária, cursos de idioma, seguro de saúde, acomodação e fornecem assistência durante o período no exterior. Contar com o apoio de uma agência de intercâmbio pode tornar o processo mais seguro e tranquilo, especialmente para quem nunca passou por essa experiência. 
-        <br>
-        Existem diferentes tipos de programas de intercâmbio, cada um adequado às necessidades individuais. Os principais tipos de intercâmbio são: 
-        <br><br>
-        <strong>Intercâmbio de Ensino Médio </strong><br><br>
-        Voltado para adolescentes que desejam cursar um semestre, um ano letivo ou todo o ensino médio em um país estrangeiro. Além de aprender o idioma, esse tipo de intercâmbio proporciona uma imersão cultural completa, já que o jovem frequentará a escola regularmente e viverá com uma família anfitriã ou em uma residência estudantil. 
-        <br><br>
-        <strong>Intercâmbio de Idiomas</strong> <br><br>
-  
-        Focado no aprendizado intensivo de um idioma, é destinado a pessoas que desejam aprimorar suas habilidades linguísticas. O participante estuda em uma escola de idiomas no exterior, onde o ensino da língua é combinado com atividades culturais. É uma oportunidade de aprender o idioma diretamente no país onde ele é falado, acelerando o processo de fluência. 
-        <br><br>
-        <strong>Intercâmbio Acadêmico</strong> <br><br>
-        
-        Direcionado a estudantes de graduação ou pós-graduação, esse intercâmbio permite que o aluno curse parte de sua formação em uma instituição estrangeira. Esse tipo de programa contribui para a formação profissional, permitindo ao estudante obter um diploma reconhecido internacionalmente. Além disso, o intercambista aprimora seu domínio do idioma estrangeiro. 
-        <br><br>
-        <strong>Intercâmbio de Trabalho</strong> <br><br>
-          
-        Esse tipo de intercâmbio possibilita trabalhar remuneradamente enquanto estuda em outro país. Além de adquirir experiência profissional, o salário recebido pode ajudar nos custos da viagem, ou até mesmo gerar lucro. 
-        <br><br>
-        <strong>Intercâmbio de Férias</strong> <br><br>
-         
-        O intercâmbio de férias é uma opção mais curta e prática, ideal para quem deseja ter uma experiência internacional sem comprometer os estudos ou o trabalho. Geralmente, esses programas ocorrem durante as férias escolares ou universitárias e podem durar de duas semanas a três meses. Durante esse período, o participante estuda um idioma ou áreas de interesse, além de participar de atividades culturais, esportivas e recreativas. 
-        <br><br>
-        <strong>Intercâmbio Voluntário <br><br></strong>
-          
-        Esse tipo de intercâmbio é voltado para pessoas que desejam contribuir para causas sociais ou ambientais em outros países. O intercâmbio voluntário envolve atividades que fazem a diferença em comunidades locais, proporcionando ao participante uma imersão cultural profunda. A duração do programa varia de acordo com o projeto escolhido.</p>
+        <p><strong>O que é um Intercâmbio?</strong></p>
+        <p>O intercâmbio é uma experiência que permite viver em outro país para estudar, trabalhar ou aprender uma nova cultura. Qualquer pessoa, independentemente da idade, pode participar de um programa de intercâmbio, adaptado ao seu objetivo específico.</p>
+        <p><strong>Tipos de Intercâmbio:</strong></p>
+        <ul>
+            <li><strong>Intercâmbio de Ensino Médio:</strong> Para jovens que desejam estudar em uma escola estrangeira e viver uma imersão cultural completa.</li>
+            <li><strong>Intercâmbio de Idiomas:</strong> Focado no aprendizado intensivo de uma nova língua.</li>
+            <li><strong>Intercâmbio Acadêmico:</strong> Direcionado a universitários que desejam estudar parte da graduação ou pós-graduação em outro país.</li>
+            <li><strong>Intercâmbio de Trabalho:</strong> Permite trabalhar enquanto estuda, obtendo experiência profissional e cultural.</li>
+            <li><strong>Intercâmbio de Férias:</strong> Ideal para quem deseja uma experiência curta durante as férias escolares ou universitárias.</li>
+            <li><strong>Intercâmbio Voluntário:</strong> Para quem quer contribuir para causas sociais em outros países.</li>
+        </ul>
     </div>
-  
+
     <!-- Vistos Section -->
     <div (click)="toggleSection('vistos')" class="section-header">
-      <h2>Vistos</h2>
-      <span class="arrow" [ngClass]="{'down': isSectionOpen('vistos'), 'up': !isSectionOpen('vistos')}"></span>
+        <h2>Vistos</h2>
+        <span class="arrow" [ngClass]="{'down': isSectionOpen('vistos'), 'up': !isSectionOpen('vistos')}"></span>
     </div>
     <div *ngIf="isSectionOpen('vistos')" class="section-content">
-      <!-- Conteúdo pode ser adicionado aqui -->
-      <p><strong>O que é? </strong><br><br>
-
-        O visto é um documento oficial emitido pelo governo de um país que permite que um estrangeiro permaneça no território por um período determinado. 
-        <br>
-        Muitos países exigem um visto para a entrada em seu território, a fim de controlar o fluxo de imigrantes e turistas, prevenir a imigração ilegal e garantir que o visitante siga as leis locais. 
-        <br>
-        Existem diferentes tipos de vistos, cada um destinado a um propósito de visita específico. 
-        <br><br>
-        <strong>Como tirar um visto?</strong>
-        <br><br>
-        O procedimento para obter um visto varia de acordo com o país de destino e o propósito da sua viagem. 
-        <br>
-        Alguns vistos podem ter um processo mais demorado e burocrático, por isso, há a opção de solicitar a ajuda de assessorias especializadas.</p>
+        <p><strong>O que é?</strong></p>
+        <p>O visto é um documento oficial que permite que um estrangeiro permaneça em um país por um período determinado, com o propósito de controle de imigração.</p>
+        <p><strong>Tipos de Visto:</strong></p>
+        <ul>
+            <li><strong>Visto de Turismo:</strong> Para pessoas que desejam visitar o país temporariamente.</li>
+            <li><strong>Visto de Estudante:</strong> Para quem vai estudar em uma instituição no exterior.</li>
+            <li><strong>Visto de Trabalho:</strong> Para estrangeiros que vão trabalhar em outro país.</li>
+            <li><strong>Visto de Residência:</strong> Para quem deseja morar no país por longos períodos.</li>
+        </ul>
+        <p><strong>Como tirar um visto?</strong></p>
+        <p>O processo de obtenção do visto varia conforme o país e o propósito da viagem. Normalmente, envolve a apresentação de documentos, entrevista e o pagamento de uma taxa. Algumas pessoas optam por contratar assessorias especializadas para orientação e acompanhamento do processo.</p>
     </div>
-  </div>
-  
+</div>
