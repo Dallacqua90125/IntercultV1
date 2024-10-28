@@ -1,25 +1,29 @@
 <app-nav-bar></app-nav-bar>
 <div class="profile-container">
   <div class="img-container">
-    <div class="profile-picture">
-      <img [src]="profileImgSrc" alt="Profile Picture">
+    <div class="profile-picture" (click)="fileInput.click()">
+      <img [src]="profileImgSrc || 'assets/default-avatar.png'" alt="Foto de Perfil">
       <input type="file" #fileInput accept="image/*" style="display: none;">
+      <p class="change-photo-text">Clique para alterar a foto</p>
     </div>
   </div>
+
   <form class="profile-form">
+    <h1>Meu Perfil</h1>
+
     <div class="form-group">
       <label for="name">Nome</label>
-      <input type="text" id="name" name="name" [(ngModel)]="userName">
+      <input type="text" id="name" name="name" [(ngModel)]="userName" placeholder="Digite seu nome">
     </div>
 
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" [(ngModel)]="userEmail">
+      <input type="email" id="email" name="email" [(ngModel)]="userEmail" placeholder="Digite seu email">
     </div>
 
-    <div class="form-link"><a href="#">Alterar Senha</a></div>
-    <div class="form-button">
-      <button type="button" (click)="saveChanges()">Salvar alterações</button>
+    <div class="form-actions">
+      <a href="#" class="change-password-link">Alterar Senha</a>
+      <button type="button" (click)="saveChanges()">Salvar Alterações</button>
     </div>
   </form>
 </div>
