@@ -16,4 +16,8 @@ export class ApiService {
   getData(): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/User`);
   }
+
+  updateUser(userId: number, updatedUser: any): Observable<any> {
+    return this.http.put(`${this.apiUrl}/User/${userId}`, updatedUser);
+  }
 }

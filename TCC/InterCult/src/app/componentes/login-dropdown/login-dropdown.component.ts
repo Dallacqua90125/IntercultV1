@@ -12,8 +12,10 @@ export class LoginDropdownComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-    const user = this.userService.getUser();
-    this.userName = user ? user.name : null;
+    // Subscrição ao BehaviorSubject para obter atualizações
+    this.userService.user.subscribe(user => {
+      this.userName = user ? user.name : null;
+    });
   }
 
   perfil: string = 'assets/icone.png';

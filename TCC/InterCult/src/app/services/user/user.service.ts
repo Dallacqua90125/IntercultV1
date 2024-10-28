@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
-
-
+import { ApiService } from '../api/api.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ export class UserService {
   private userSubject: BehaviorSubject<any> = new BehaviorSubject<any>(null);
   public user: Observable<any> = this.userSubject.asObservable();
 
-  constructor() { }
+  constructor(private http: HttpClient, private apiService: ApiService) { }
 
   setUser(user: any) {
     this.userSubject.next(user);
@@ -20,10 +20,7 @@ export class UserService {
     return this.userSubject.value;
   }
 
-  // Novo método para atualizar o usuário
-  updateUser(updatedUser: any): void {
-    // Aqui você poderia fazer uma chamada HTTP para atualizar o usuário no banco de dados
-    console.log('Usuário atualizado:', updatedUser);
-    this.setUser(updatedUser);  // Atualiza o usuário localmente
+  updateUser(userId: number, updatedUser: any): Observable<any> {
+    return this.apiService.updateUser(userId, updatedUser);
   }
 }
