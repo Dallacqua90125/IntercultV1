@@ -12,7 +12,7 @@ export class SearchBarComponent {
 
   locais: string[] = ['Todos', 'Itália', 'Franca', 'Canada'];
   agencias: string[] = ['Todas', 'EF', 'CI'];
-  times: string[] = ['Qualquer duração', '2', '3', '4'];
+  times: string[] = ['Qualquer duração', '1 semana', '2 semanas', '3 semanas', '4 semanas'];
 
   selectedLocation: string = 'Todos';
   selectedAgency: string = 'Todas';
@@ -29,6 +29,6 @@ export class SearchBarComponent {
     });
 
     // Redirecionar para a página de resultados
-    this.router.navigate(['/results'], { queryParams: { location: this.selectedLocation, agency: this.selectedAgency, price: this.selectedTime } });
+    this.router.navigate(['/results'], { queryParams: { location: this.selectedLocation, agency: this.selectedAgency, time: this.selectedTime } });
   }
 }

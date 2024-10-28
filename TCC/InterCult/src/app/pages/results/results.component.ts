@@ -49,9 +49,14 @@ export class ResultsComponent implements OnInit {
     this.resultado = this.resultado.filter(item => {
       const matchesLocation = location === 'Todos' || item.country === location; // Ajuste para seu modelo de dados
       const matchesAgency = agency === 'Todas' || item.agency === agency;
-      // const matchesTime = time === 'Qualquer duração' || item.time, ;
+      let matchesTime = true;
+      if (time !== 'Qualquer duração') {
+        const selectedWeeks = parseInt(time.split(' ')[0], 10); // Extrai o número de semanas do filtro
+        const itemTime = parseInt(item.time, 10); // Converte item.time para número, se necessário
+        matchesTime = itemTime === selectedWeeks; // Verifica se a duração do item corresponde
+      } ;
 
-      return matchesLocation && matchesAgency;
+      return matchesLocation && matchesAgency && matchesTime;
     });
   }
 
