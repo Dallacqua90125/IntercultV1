@@ -60,17 +60,4 @@ export class ResultsComponent implements OnInit {
     });
   }
 
-  // Método para verificar o intervalo de preços
-  private checkPrice(itemPrice: number, selectedPrice: string): boolean {
-    switch (selectedPrice) {
-      case 'R$ 1.500 a R$ 5.000':
-        return itemPrice >= 1500 && itemPrice <= 5000;
-      case 'R$ 5.000 a R$ 15.000':
-        return itemPrice > 5000 && itemPrice <= 15000;
-      case 'Mais de R$ 15.000':
-        return itemPrice > 15000;
-      default:
-        return true; // Para 'Qualquer preço'
-    }
-  }
 }
