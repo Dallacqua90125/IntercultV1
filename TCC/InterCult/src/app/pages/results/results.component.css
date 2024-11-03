@@ -89,7 +89,7 @@ body {
 }
 
 .filtro-titulo {
-  font-size: 2.5vh;
+  font-size: 2.8vh;
   font-weight: bold;
   margin-bottom: 1.5vh;
 }
@@ -145,7 +145,7 @@ input[type="checkbox"]:checked + .checkbox-custom::after {
 }
 
 label {
-  font-size: 2.2vh;
+  font-size: 2.6vh;
   vertical-align: middle; /* Garante que o texto esteja alinhado ao meio */
   line-height: 1; /* Mantém o alinhamento consistente */
 }
@@ -157,7 +157,7 @@ input[type="range"] {
   border: 0.2vh solid #ddd;
   border-radius: 0.5vh;
   margin-top: 1vh;
-  font-size: 2vh;
+  font-size: 2.3vh;
 }
 
 
@@ -170,7 +170,7 @@ button {
   border: none;
   border-radius: 0.5vh;
   cursor: pointer;
-  font-size: 2.5vh;
+  font-size: 2.6vh;
 }
 
 button:hover {
@@ -197,12 +197,12 @@ button:hover {
   
   .ordenar-por label {
     margin-right: 1vw;
-    font-size: 2.3vh;
+    font-size: 2.5vh;
     font-weight: bold;
   }
   
   select {
-    font-size: 2.2vh;
+    font-size: 2.4vh;
     padding: 0.5vh;
     border: 2px solid #ccc;
     border-radius: 4px;
