@@ -74,3 +74,19 @@
     text-decoration: none;
     font-size: 15pt;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: 999; /* Para que fique abaixo da dropbox, mas acima do conteúdo */
+    display: none; /* Inicialmente escondido */
+}
+
+/* Exibir a sobreposição e a dropbox */
+.dropdown-content.show ~ .overlay {
+    display: block;
+}
