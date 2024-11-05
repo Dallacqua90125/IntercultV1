@@ -2,68 +2,71 @@
 .footer {
     background: linear-gradient(135deg, #0045ad, #0059c9); /* Gradiente de azul */
     color: #ffffff;
-    padding: 10px 20px; /* Altura mínima */
-    font-size: 13px;
+    padding: 1.3vh 2vw; /* Reduzido para diminuir a altura do rodapé */
+    font-size: 1.8vh; /* Aumentado para tornar o texto mais legível */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-  }
-  
-  /* Layout horizontal do conteúdo principal */
-  .footer-content {
+    box-shadow: 0 -0.5vh 1.5vh rgba(0, 0, 0, 0.1); /* Sombra ajustada */
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Layout horizontal do conteúdo principal */
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    padding: 5px 0;
-    gap: 20px;
-  }
-  
-  .contact-info p {
+    width: 100vw;
+    max-width: 90vw;
+    padding: 0.5vh 0; /* Reduzido ainda mais para compactar */
+    gap: 2vw;
+}
+
+.contact-info p {
     margin: 0;
-    font-size: 14px;
-  }
-  
-  .contact-info a {
+    font-size: 1.8vh; /* Ajustado para seguir o aumento de fonte */
+}
+
+.contact-info a {
     color: #ffdd57; /* Tom de destaque para o link */
     text-decoration: none;
     transition: color 0.3s;
-  }
-  
-  .contact-info a:hover {
+}
+
+.contact-info a:hover {
     color: #ffffff;
-  }
-  
-  /* Estilos dos ícones sociais */
-  .social-media {
+}
+
+/* Estilos dos ícones sociais */
+.social-media {
     display: flex;
-    gap: 15px;
-  }
-  
-  .social-icon {
-    width: 28px; /* Ícone maior para melhor visibilidade */
-    height: 28px;
+    gap: 1.5vw;
+}
+
+.social-icon {
+    width: 3.5vh; /* Ícone levemente reduzido */
+    height: 3.5vh;
     transition: transform 0.2s, filter 0.2s;
     filter: brightness(0.9);
-  }
-  
-  .social-icon:hover {
+}
+
+.social-icon:hover {
     transform: scale(1.2); /* Efeito de ampliação ao passar o mouse */
     filter: brightness(1);
-  }
-  
-  /* Rodapé inferior com largura completa e espaçamento mínimo */
-  .footer-bottom {
-    font-size: 12px;
+}
+
+/* Rodapé inferior com largura completa e espaçamento mínimo */
+.footer-bottom {
+    font-size: 1.5vh; /* Fonte maior para rodapé inferior */
     color: #cccccc;
-    margin-top: 8px;
-  }
-  
-  .footer-bottom p {
+    margin-top: 0.8vh;
+}
+
+.footer-bottom p {
     margin: 0;
-  }
-  
+}

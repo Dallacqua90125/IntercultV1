@@ -39,7 +39,8 @@ export class DropBoxComponent {
   
   toggleDropdown() {
     this.isOpen = !this.isOpen;
-  }
+}
+
 
   get stateName() {
     return this.isOpen ? 'in' : 'out';
