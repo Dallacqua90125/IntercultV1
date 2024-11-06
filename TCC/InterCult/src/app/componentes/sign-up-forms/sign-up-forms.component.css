@@ -11,7 +11,12 @@ body {
 	height: 100vh;
 	margin: -20px 0 50px;
 }
-
+button.loading {
+	background-color: #ccc;  /* Cor de fundo cinza */
+	color: #666;  /* Cor do texto cinza */
+	cursor: not-allowed;  /* Cursor bloqueado */
+  }
+  
 h1 {
 	font-weight: bold;
 	margin: 0;

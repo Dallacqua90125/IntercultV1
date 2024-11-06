@@ -28,7 +28,11 @@ p {
 	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
 }
-
+button.loading {
+	background-color: #ccc; /* Cor de fundo cinza */
+	color: #666; /* Cor do texto cinza */
+	cursor: not-allowed; /* Mostra o cursor de bloqueado */
+  }
 span {
 	font-size: 12px;
 }
