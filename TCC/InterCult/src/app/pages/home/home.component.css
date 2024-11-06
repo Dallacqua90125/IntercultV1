@@ -24,7 +24,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10vh;
+  margin-bottom: 10vh;
   }
   .box {
   width: 450px;
