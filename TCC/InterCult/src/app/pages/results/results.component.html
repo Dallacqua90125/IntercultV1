@@ -1,6 +1,6 @@
 <app-nav-bar [disableLogoImg]="true"></app-nav-bar>
 <div class="container-search">
-  <app-search-bar (searchEvent)="applyFilters($event)"></app-search-bar>  
+  <app-search-bar (searchEvent)="applyFilters($event)"></app-search-bar>
 </div>
 
 <div class="container">
@@ -11,16 +11,15 @@
         <label class="filtro-titulo">Idioma</label>
         <div *ngFor="let idioma of idiomas">
           <label>
-            <input 
-              type="radio" 
-              name="idioma" 
-              [value]="idioma"
-              [(ngModel)]="selectedIdioma"
+            <input type="radio" name="idioma" [value]="idioma" [(ngModel)]="selectedIdioma"
               (change)="onIdiomaChange(idioma)">
             <span class="radio-custom"></span>
             {{ idioma }}
           </label>
         </div>
+        <select id="price" name="time" [(ngModel)]="selectedTime">
+          <option *ngFor="let time of times" [value]="time">{{time}}</option>
+        </select>
       </div>
       
       <button type="button" (click)="onApplyCheckboxFilters()">Aplicar Filtros</button>

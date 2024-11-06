@@ -13,18 +13,17 @@ export class ResultsComponent implements OnInit {
   resultadoFiltrado: Content[] = []; // Armazena os resultados filtrados
   filtros: any = {};
 
-  // Propriedades adicionais para filtros de idioma e checkbox
   idiomas: string[] = ['Inglês', 'Espanhol', 'Francês', 'Italiano'];
   paises: string[] = ['Italia', 'Franca', 'Canada'];
   opcoes: string[] = ['Opção 1', 'Opção 2', 'Opção 3'];
+  times: string[] = ['Qualquer duração', '1 a 4 semanas', '8 semanas', '20 a 30 semanas', 'Mais semanas'];
 
-  // Lista para armazenar a seleção de idioma (um só por vez)
-  selectedIdioma: string = ''; // Usando uma string para manter apenas uma seleção por vez
+  selectedIdioma: string = '';
+  selectedTime: string = 'Qualquer duração';
 
   constructor(private contentService: ContentService, private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    // Captura os parâmetros da rota para os filtros iniciais
     this.route.queryParams.subscribe(params => {
       this.filtros = {
         location: params['location'],
@@ -36,17 +35,14 @@ export class ResultsComponent implements OnInit {
   }
 
   fetchResults() {
-    // Busca o conteúdo e aplica os filtros de barra de busca inicialmente
-    this.selectedIdioma = '';  // Limpa a seleção do idioma
+    this.selectedIdioma = '';
     this.contentService.GetContent().subscribe(response => {
       this.resultado = response.data;
-      this.resultadoFiltrado = [...this.resultado]; // Mantém a lista inicial para aplicar os filtros de checkbox
-
-      this.applySearchFilters();  // Filtra com base nos parâmetros iniciais
+      this.resultadoFiltrado = [...this.resultado];
+      this.applySearchFilters();
     });
   }
 
-  // Método para aplicar filtros da barra de busca
   applySearchFilters() {
     const { location, agency, type } = this.filtros;
     this.resultadoFiltrado = this.resultado.filter(item => {
@@ -57,41 +53,52 @@ export class ResultsComponent implements OnInit {
       return matchesLocation && matchesAgency && matchesType;
     });
 
-    // Atualiza os países após o filtro da busca
-    this.paises = [...new Set(this.resultadoFiltrado.map(item => item.country))]; // Extraí os países filtrados
+    this.paises = [...new Set(this.resultadoFiltrado.map(item => item.country))];
   }
 
-  // Aplica o filtro de idioma nos resultados já filtrados pela barra de busca
   applyCheckboxFilters() {
-    const filteredByLocation = this.resultadoFiltrado.filter(item => {
-      // Filtra com base nos países que foram selecionados na busca
-      return this.paises.includes(item.country);
-    });
+    let filteredResults = [...this.resultadoFiltrado];
 
-    if (!this.selectedIdioma) {
-      this.resultadoFiltrado = filteredByLocation;  // Se não houver idioma selecionado, mostra todos os resultados
-    } else {
-      this.resultadoFiltrado = filteredByLocation.filter(item => {
-        return item.price === this.selectedIdioma;  // Altere conforme o campo de idioma
+    if (this.selectedIdioma) {
+      filteredResults = filteredResults.filter(item => item.price === this.selectedIdioma);
+    }
+
+    if (this.selectedTime && this.selectedTime !== 'Qualquer duração') {
+      filteredResults = filteredResults.filter(item => {
+        const itemTime = parseInt(item.time, 10);
+
+        if (isNaN(itemTime)) return false;
+
+        switch (this.selectedTime) {
+          case '1 a 4 semanas':
+            return itemTime >= 1 && itemTime <= 4;
+          case '8 semanas':
+            return itemTime === 8;
+          case '20 a 30 semanas':
+            return itemTime >= 20 && itemTime <= 30;
+          case 'Mais semanas':
+            return itemTime > 30;
+          default:
+            return true;
+        }
       });
     }
+
+    this.resultadoFiltrado = filteredResults;
   }
 
-  // Atualiza a seleção ao clicar em um idioma
   onIdiomaChange(idioma: string) {
-    this.selectedIdioma = idioma;  // Atualiza a seleção com o novo idioma
+    this.selectedIdioma = idioma;
   }
 
-  // Evento para o botão de aplicar filtros
   onApplyCheckboxFilters() {
     this.applySearchFilters();
-    this.applyCheckboxFilters();  // Aplica o filtro de idioma nos resultados já filtrados pela barra de busca
+    this.applyCheckboxFilters();
   }
 
-  // Evento que atualiza os filtros da barra de busca e aplica novamente
   applyFilters(filtros: any) {
     this.filtros = filtros;
     this.applySearchFilters();
-    this.applyCheckboxFilters(); // Mantém os filtros de checkbox
+    this.applyCheckboxFilters();
   }
 }
