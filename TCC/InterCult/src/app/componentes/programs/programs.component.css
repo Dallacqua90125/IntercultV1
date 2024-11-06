@@ -3,6 +3,7 @@
     padding: 2vh 0;
     overflow: hidden; /* Oculta os itens que saem dos limites do container */
     justify-content: center;
+    padding-bottom: 13.4vh;
 }
 .program {
     flex: 0 0 27%; /* Cada item ocupa um terço da largura do contêiner */
