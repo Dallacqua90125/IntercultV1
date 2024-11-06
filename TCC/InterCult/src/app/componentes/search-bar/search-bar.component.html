@@ -13,8 +13,8 @@
     </div>
     <div class="dropdown-container">
         <label for="price">Duração</label>
-        <select id="price" [(ngModel)]="selectedTime">
-            <option *ngFor="let time of times" [value]="time">{{time}}</option>
+        <select id="price" [(ngModel)]="selectedType">
+            <option *ngFor="let type of types" [value]="type">{{type}}</option>
         </select>
     </div>
     <button class="search-button" (click)="onSearch()">Pesquisar</button>

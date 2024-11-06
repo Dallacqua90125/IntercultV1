@@ -1,6 +1,6 @@
 <app-nav-bar [disableLogoImg]="true"></app-nav-bar>
 <div class="container-search">
-    <app-search-bar (searchEvent)="applyFilters($event)"></app-search-bar>  
+  <app-search-bar (searchEvent)="applyFilters($event)"></app-search-bar>  
 </div>
 
 <div class="container">
@@ -8,63 +8,34 @@
     <h2>Filtros</h2>
     <form>
       <div class="filtro-secao">
-        <label class="filtro-titulo">Tipo</label>
-        <div *ngFor="let tipo of tipos">
+        <label class="filtro-titulo">Idioma</label>
+        <div *ngFor="let idioma of idiomas">
           <label>
-            <input type="checkbox">
-            <span class="checkbox-custom"></span>
-            {{ tipo }}
+            <input 
+              type="radio" 
+              name="idioma" 
+              [value]="idioma"
+              [(ngModel)]="selectedIdioma"
+              (change)="onIdiomaChange(idioma)">
+            <span class="radio-custom"></span>
+            {{ idioma }}
           </label>
         </div>
-      </div>
-
-      <!-- <div class="filtro-secao">
-        <label class="filtro-titulo">Duração</label>
-        <input type="text" placeholder="Tempo mínimo">
-        <input type="text" placeholder="Tempo máximo">
-      </div> -->
-
-      <div class="filtro-secao">
-        <label class="filtro-titulo">País</label>
-        <div *ngFor="let pais of paises">
-          <label>
-            <input type="checkbox">
-            <span class="checkbox-custom"></span>
-            {{ pais }}
-          </label>
-        </div>
-      </div>
-
-      <div class="filtro-secao">
-        <label class="filtro-titulo">O que está incluso</label>
-        <div *ngFor="let opcao of opcoes">
-          <label>
-            <input type="checkbox">
-            <span class="checkbox-custom"></span>
-            {{ opcao }}
-          </label>
-        </div>
-      </div>
-
-      <div class="ordenar-por">
-        <label for="ordenar-select">Ordenar por:</label>
-        <select id="ordenar-select">
-          <option value="avaliacao">Avaliação</option>
-          <option value="duracao">Duração</option>
-        </select>
       </div>
       
-      <button type="submit">Aplicar Filtros</button>
+      <button type="button" (click)="onApplyCheckboxFilters()">Aplicar Filtros</button>
     </form>
   </div>
 
   <div class="resultados-container">
     <h2>Resultados</h2>
-    <div class="resultado" *ngFor="let resultado of resultado" [routerLink]="['/content', resultado.id]">
-      <div class="imagem"> <img [src]="resultado.photo1"></div>
+    <div class="resultado" *ngFor="let resultado of resultadoFiltrado" [routerLink]="['/content', resultado.id]">
+      <div class="imagem">
+        <img [src]="resultado.photo1" alt="Imagem de {{ resultado.type }}">
+      </div>
       <div class="info">
         <h3>{{ resultado.country }} - {{resultado.type}}</h3>
-        <p>{{ resultado.city }} - {{ resultado.agency }}  </p>
+        <p>{{ resultado.city }} - {{ resultado.agency }}</p>
         <p>Nota: 5</p>
       </div>
     </div>
