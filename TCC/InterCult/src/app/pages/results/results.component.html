@@ -63,8 +63,8 @@
     <div class="resultado" *ngFor="let resultado of resultado" [routerLink]="['/content', resultado.id]">
       <div class="imagem"> <img [src]="resultado.photo1"></div>
       <div class="info">
-        <h3>{{ resultado.country }} - {{resultado.agency}}</h3>
-        <p>{{ resultado.city }} - {{ resultado.time }} semanas </p>
+        <h3>{{ resultado.country }} - {{resultado.type}}</h3>
+        <p>{{ resultado.city }} - {{ resultado.agency }}  </p>
         <p>Nota: 5</p>
       </div>
     </div>
