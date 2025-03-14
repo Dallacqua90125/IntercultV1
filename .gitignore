@@ -1,0 +1,54 @@
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Visual Studio
+.vs/
+.vs2019/
+.vs2017/
+.vs2015/
+# User-specific files for Visual Studio
+.vs2019/config/
+.vs2017/config/
+.vs2015/config/
+# User-specific Visual Studio files
+.vs2019/*/settings.json
+.vs2017/*/settings.json
+.vs2015/*/settings.json
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db

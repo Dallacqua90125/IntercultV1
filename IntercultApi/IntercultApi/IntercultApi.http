@@ -1,0 +1,6 @@
+@IntercultApi_HostAddress = http://localhost:5232
+
+GET {{IntercultApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\controllers\\contentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\controllers\\contentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\services\\contentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\services\\contentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\migrations\\20250310173936_migrationintercult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\migrations\\20250310173936_migrationintercult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|c:\\users\\timeware 027\\timeware\\api-timeware\\intercultapi\\intercultapi\\models\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11EA8F88-21E0-4FB0-9DE1-2BDDB8CB7B89}|IntercultApi\\IntercultApi.csproj|solutionrelative:intercultapi\\models\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContentService.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Services\\ContentService.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Services\\ContentService.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Services\\ContentService.cs",
+              "RelativeToolTip": "IntercultApi\\Services\\ContentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:48:09.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Controllers\\ContentsController.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Controllers\\ContentsController.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Controllers\\ContentsController.cs",
+              "RelativeToolTip": "IntercultApi\\Controllers\\ContentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:47:27.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250310173936_migrationIntercult.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Migrations\\20250310173936_migrationIntercult.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Migrations\\20250310173936_migrationIntercult.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Migrations\\20250310173936_migrationIntercult.cs",
+              "RelativeToolTip": "IntercultApi\\Migrations\\20250310173936_migrationIntercult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:39:36.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "IntercultApi\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:48:36.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\appsettings.json",
+              "RelativeDocumentMoniker": "IntercultApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\appsettings.json",
+              "RelativeToolTip": "IntercultApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T15:45:46.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Program.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Program.cs",
+              "RelativeToolTip": "IntercultApi\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:45:44.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "IntercultApi\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:46:43.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Services\\UserService.cs",
+              "RelativeToolTip": "IntercultApi\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:48:24.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Content.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Models\\Content.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Models\\Content.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Models\\Content.cs",
+              "RelativeToolTip": "IntercultApi\\Models\\Content.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA8wA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:30:01.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "IntercultApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Timeware 027\\Timeware\\Api-timeware\\IntercultApi\\IntercultApi\\Models\\User.cs",
+              "RelativeToolTip": "IntercultApi\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T15:27:38.88Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
