@@ -3,7 +3,7 @@
     public class Content
     {
         public int Id { get; set; }
-        public string Price { get; set; }
+        public string Language { get; set; }
         public string Type { get; set; }
         public string Time { get; set; }
         public string Photo1 { get; set; }

@@ -49,6 +49,10 @@ namespace IntercultApi.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Link")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -58,10 +62,6 @@ namespace IntercultApi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Photo2")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Price")
                         .IsRequired()
                         .HasColumnType("longtext");
 

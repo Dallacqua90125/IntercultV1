@@ -1,6 +1,6 @@
 export interface Content{
     id? : number;
-    price : string;
+    language : string;
     type: string;
     time: string;
     photo1: string;

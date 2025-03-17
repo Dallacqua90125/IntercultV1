@@ -7,7 +7,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { AgenciasComponent } from './pages/agencias/agencias.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 // import { ResultsComponent } from './pages/results/results.component';
-// import { ContentComponent } from './pages/content/content.component';
+import { ContentComponent } from './pages/content/content.component';
 import { DocumentationComponent } from './pages/documentation/documentation.component';
 
 const routes: Routes = [
@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'documentation', component: DocumentationComponent},
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
-  // { path: 'content/:id', component: ContentComponent },
+  { path: 'content/:id', component: ContentComponent },
 ];
 
 @NgModule({

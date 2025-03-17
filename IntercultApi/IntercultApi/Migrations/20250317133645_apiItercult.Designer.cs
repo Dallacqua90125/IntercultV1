@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IntercultApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250310173936_migrationIntercult")]
-    partial class migrationIntercult
+    [Migration("20250317133645_apiItercult")]
+    partial class apiItercult
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,10 @@ namespace IntercultApi.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Link")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -61,10 +65,6 @@ namespace IntercultApi.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Photo2")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Price")
                         .IsRequired()
                         .HasColumnType("longtext");
 
